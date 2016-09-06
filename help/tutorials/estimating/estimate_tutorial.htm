@@ -1,0 +1,598 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Estimate Tutorial</title>
+<link href="../../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Estimate Tutorial</h1>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  estimating.rw<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Estimating</font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">This 
+  tutorial runs you through the generation of an <a href="../../concepts/estimate.htm">estimate</a> 
+  using Epic's Estimating <a href="../../concepts/plug-in.htm">plug-in</a>. </font><font face="Arial, Helvetica, sans-serif" size="2">If 
+  you wish to create an estimate outside of Epic in an application such as Microsoft 
+  Excel you will need a <a href="../../howto/estimating/import_estimate.htm#custom">custom 
+  import process</a> supplied by a <a href="../../concepts/custom_plug-in.htm">custom 
+  plug-in</a>. This is referred to as an <a href="../../concepts/estimate.htm#external">external 
+  estimate</a> and is not covered in this tutorial. </font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">This 
+  tutorial covers:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#preparation">preparation</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#tasks">tasks</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#adding">adding 
+    tasks</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#editing">editing 
+    tasks</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#rates">rates</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#copy">copying 
+    tasks</a></font></li>
+  <li><a href="#total"><font size="2" face="Arial, Helvetica, sans-serif">total 
+    calculation</font></a></li>
+  <li><a href="#export"><font size="2" face="Arial, Helvetica, sans-serif">exporting 
+    the estimate</font></a></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#types">task 
+    types</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#preferences">estimate 
+    preferences</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#columns">customising 
+    columns</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#dnd">drag'n'drop</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#templates">estimate 
+    templates</a></font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="preparation" id="preparation"></a><strong>Preparation 
+  </strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">The 
+  initial stage is for an internal estimate record to be created. This is done 
+  via the Project Management plug-in and may not even be carried out by estimators 
+  at all. This process is detailed in <a href="../../howto/estimating/create_estimate.htm">creating 
+  a new estimate</a>. During this process an estimator is nominated for the estimate. 
+  If you are not this estimator Epic will allow you to edit the estimate but will 
+  first query this.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">You 
+  can then open the estimate record. <a href="../../howto/gui/switch_plugin.htm">Switch</a> 
+  to the Estimating plug-in and <a href="../../howto/estimating/open_estimate.htm">open 
+  the estimate editor</a> for the record. </font><font size="2" face="Arial, Helvetica, sans-serif">The 
+  editor will open showing two <a href="../../concepts/tab/tab.htm">tabs</a>. The 
+  first displays details about the estimate as a whole; the second displays the 
+  estimate tasks. This tutorial assumes you are starting with a brand new estimate 
+  record hence the second tab is currently empty. Dependent on your <a href="#preferences">estimate 
+  preferences</a>, there may be a third tab. This is to do with task types and 
+  is explained <a href="#types">later</a>.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Standard 
+  Epic behaviour is to open the editor read-only. You will need to <a href="../../howto/gui/open_readwrite.htm">switch 
+  to the read-write editor.</a> Note that if you are the assigned estimator for 
+  the estimate you can configure Epic to automatically open your estimates read-write 
+  via your <a href="#preferences">estimate preferences</a>. Bear in mind that 
+  once an estimate has been <a href="../../howto/estimating/import_estimate.htm">imported</a>, 
+  it cannot be edited by anyone.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a name="tasks" id="tasks"></a><strong>Tasks</strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">You 
+  generate an estimate by adding tasks and assigning costs to these tasks. There 
+  are three tiers:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><strong>customer tasks 
+    </strong>: these are the tasks that the <a href="../../concepts/customer.htm">customer</a> 
+    will eventually see in the final delivered estimate; customer tasks contain 
+    one or more:</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><strong>yard tasks </strong>: 
+    these are the actual tasks carried out in the yard in order to fulfil a customer 
+    task; yard tasks contain one or more:</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><strong>line items </strong>: 
+    this is the level at which actual costs are entered.</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">This hierarchical approach 
+  maximises flexibility by allowing you to separate what the customer sees from 
+  what the yard sees, and to allow any number of line items to be used in calculating 
+  a tasks' values. </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Customer tasks will eventually 
+  form the estimate presented to the customer. If this estimate is accepted and 
+  the <a href="../../concepts/project.htm">project</a> reaches the contract stage, 
+  customer tasks, and optionally yard tasks, will be <a href="../../howto/estimating/import_estimate.htm">imported</a> 
+  to the project from the estimate. This creates <a href="../../concepts/task.htm#customer_task">project 
+  customer tasks</a> and, optionally, <a href="../../concepts/task.htm#yard_task">project 
+  yard tasks</a>. </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Note for the rest of this 
+  tutorial 'task' refers to a task within the estimate rather than a project task.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="adding" id="adding"></a><strong>Adding 
+  and Removing Tasks</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">We shall now start adding 
+  tasks. Switch to the second tab ('All Tasks by Code') - this will be blank as 
+  this is a new estimate. There should be a single <img src="add_cust_button.png" alt="add customer task" width="16" height="16"> 
+  button visible at the top of the editor (if you can only see a <img src="../../images/edit_overlay.gif" alt="open read-write editor" width="16" height="16" align="texttop"> 
+  button then you have not yet <a href="../../howto/gui/open_readwrite.htm">switched 
+  to the read-write editor</a>). </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Click the <img src="add_cust_button.png" alt="add customer task" width="16" height="16"> 
+  button. This creates a new customer task with a single child yard task which 
+  has a single child line item. Each has a default description but all other values 
+  are zero or blank. The yard task and line item are automatically created due 
+  to a default <a href="#preferences">estimate preference</a>. This automatic 
+  creation of 'children' can be switched off.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">The new customer task is 
+  highlighted and more buttons are now visible. If you hover the mouse over each 
+  button a short tooltip tells you what each button does: </font></p>
+<blockquote> 
+  <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="cust_buttons.png" width="176" height="16"></font></p>
+</blockquote>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">add yard task to the 
+    selected customer task : a customer task can have any number of yard tasks</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"> add sibling before selected 
+    : create a new customer task (with children) above the current one</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">add sibling after selected 
+    : create a new customer (with children) below the current one</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">cut current selection 
+    into clipboard </font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">copy current selection 
+    into clipboard </font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">remove selected and any 
+    children : deletes the customer task hence all its children</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">saves changes to this 
+    record : this refers to the whole estimate, not just the selected task</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">If you now select the yard 
+  task be clicking on its row, the buttons will change. They have similar functions 
+  but at the yard task level. Similarly if you select the line item, the buttons 
+  offer similar actions at the line item level.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Now experiment with adding 
+  and removing tasks at each level. Note in particular that if you delete the 
+  only child of a customer or yard task, this will cause the parent task to be 
+  deleted as well. Aim to finish where you started - with a single customer task 
+  containing a single yard task containing a single line item. Once you are comfortable 
+  adding and removing tasks we can move onto editing tasks.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="editing" id="editing"></a><strong>Editing 
+  Tasks</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"> Different information can 
+  be recorded against each type of task. Normally this is done by typing into 
+  the appropriate row and column of the estimate though there are exceptions. 
+  Here we will deal with the columns that are displayed by default when an estimate 
+  is created. (If you wish to use different columns or use them for different 
+  purposes see <a href="#columns">customising columns</a>). The following table 
+  lists this columns, whether they editable for each type of task, and how to 
+  edit them:</font></p>
+<table width="100%" border="1" cellpadding="1" cellspacing="0" bordercolor="#009999">
+  <tr> 
+    <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif"><strong>Column</strong></font></td>
+    <td width="10%" align="center"><font size="2" face="Arial, Helvetica, sans-serif"><strong>Editable*</strong></font></td>
+    <td width="70%"><font size="2" face="Arial, Helvetica, sans-serif"><strong>Purpose 
+      / Edit</strong></font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Expand</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">CY</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Not an editable field 
+      - clicking shows/hides child tasks and items</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif"><a name="include"></a>Include</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">CYL</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Whether or not to include 
+      the line's total in the estimate's total price.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Customer Code</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">C</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">The customer's code 
+      for the customer task.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Code</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">CYL</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">The yard's code for 
+      the task. By default this is automatic hence not editable. This can be <a href="../../howto/gui/change_codes.htm">changed</a> 
+      via your <a href="../../concepts/preferences.htm">user preferences</a>. If 
+      so, type in the column - note that whilst codes can be assigned to line 
+      items but these will never be seen beyond the estimate.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Description</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">CYL</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">This can be edited 
+      by typing in the column. However this only allows a single line of text. 
+      if you want to add a multi-line description you can also type in the box 
+      below the main estimate table. As with codes, line items can be edited but 
+      their descriptions are not seen beyond the estimate.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Manhours</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">L</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Number of manhours 
+      - type in a number. This can be a decimal of up to two decimal places.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Manhr. rate</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">L</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">The manhour rate - 
+      type in a number with up to two decimal places or select a <a href="#rates">rate</a> 
+      from the dropdown list. By default this list is empty.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Manhour total</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">-</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Not editable - the 
+      sum of the previous two column</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Materials (qty)</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">L</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Quantity of material 
+      - type in a number. This can be a decimal of up to two decimal places.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Mats. unit cost</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">L</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">The material cost per 
+      unit- type in a number with up to two decimal places or select a <a href="#rates">rate</a> 
+      from the dropdown list. By default this list is empty.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Materials total</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">-</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Not editable - the 
+      sum of the previous two columns.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Subcontract (units)</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">L</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Units of material - 
+      type in a number. This can be a decimal of up to two decimal places.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Subc. unit cost</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">L</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">The subcontract cost 
+      per unit- type in a number with up to two decimal places or select a <a href="#rates">rate</a> 
+      from the dropdown list. By default this list is empty.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Subc. total</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">-</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Not editable - the 
+      sum of the previous two columns.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Tariff item units</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">L</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Units of resource - 
+      type in a number. This can be a decimal of up to two decimal places.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Tariff item rate</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">L</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">The resource cost per 
+      unit- type in a number with up to two decimal places or select a <a href="#rates">rate</a> 
+      from the dropdown list. By default this list is empty.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Tariff item total</font></td>
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">-</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Not editable - the 
+      sum of the previous two columns.</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Total</font></td>
+    <td align="center">-</td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Not editable - the 
+      total for the line - see <a href="#total">total calculation</a>.</font></td>
+  </tr>
+</table>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><strong>*</strong></font><strong> 
+  : <font size="2" face="Arial, Helvetica, sans-serif">C</font></strong><font size="2" face="Arial, Helvetica, sans-serif">(ustomer 
+  task), <strong>Y</strong>(ard Task), <strong>L</strong>(ine item)</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">The 'manhour' columns are 
+  self-explanatory but the difference between 'materials', 'subcontract' and 'tariff 
+  items' may not be. For convenience Epic divides bought-in costs into services 
+  (subcontract) and materials. The totals for each are separately recorded and 
+  then passed onto <a href="../../concepts/task.htm">project tasks</a> when the 
+  tasks are <a href="../../howto/estimating/import_estimate.htm">imported</a> 
+  into the project. </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/tariff_item.htm">Tariff 
+  items</a> are for standardised expenses such as dock rents, electricity and 
+  fresh water charges etc. Tariff items are explicitly imported into project tasks 
+  as they are necessary for estimating and for invoice generation.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Now try experiment editing 
+  the existing customer task and its child yard task and line item. However do 
+  not add any further tasks yet as first we will first add some rates.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="rates" id="rates"></a><strong>Rate</strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"> Rates 
+  are a means of applying standard unit costs across an entire estimate. Rates 
+  are stored on an estimate and are unique to that estimate. Furthermore there 
+  are different set of rates for each unit cost column (with default columns these 
+  are manhours rate, materials rate, subcontract rate and resource rate). An estimate 
+  starts with no rates recorded - which is why the dropdown list in these columns 
+  is empty. </font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">To add 
+  rates you must first open an additional <a href="../../concepts/view.htm">view</a>. 
+  To do this ensure you are in the estimate plug-in and click the 'Plug-ins' menu 
+  option at the top. This displays all possible plug-ins and below this, additional 
+  windows that can be opened:</font></p>
+<blockquote> 
+  <p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><img src="plug-ins-menu.png" width="274" height="333" border="1"></font></p>
+</blockquote>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Click 
+  'Rates' and the rates view opens on the right hand side of the screen. This 
+  is likely to be blanked until you select one of the cost columns. Then the view 
+  shows all rates for that type of cost. </font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Click 
+  the Manhours column. The rates view will display the heading 'Manhour Rates' 
+  and its buttons will be enabled. Click the 'add new rate' button and a window 
+  will open requesting the rate name and value. The rate name is what is displayed 
+  in the dropdown lists within the unit cost columns:</font></p>
+<blockquote> 
+  <p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><img src="rate_dialog.png" width="322" height="151"></font></p>
+</blockquote>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Call 
+  the rate 'standard' and it give it a non-zero value and click OK. The rate will 
+  now appear in the rate view and if you click on the manhour rate column and 
+  then open the dropdown list this rate will appear. </font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Experiment 
+  adding rates to manhours and other columns. You can also edit existing rates 
+  directly in the rates view. Changes immediately affect the estimate totals and 
+  the dropdown rate lists. Note that as rates are stored with the estimate, you 
+  must save the estimate for new rates to be remembered.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">One 
+  significant difference between the demonstration and production versions of 
+  Epic is that in the demonstration version every new estimate starts with no 
+  rates. In production however all new estimates will start with 'global' rates 
+  set by an administrator. This are copied to the estimate so that they can then 
+  be altered (given permissions) on an estimate-per-estimate basis. This also 
+  means that if you review a past estimate, you will see the rates used during 
+  its creation rather than current global rates.</font></p>
+<p class="defaultText"><a name="copy"></a><font size="2"><strong>Copying Tasks</strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">A common 
+  method of creating an estimate is is to base it on a past estimate. Epic supports 
+  this via four mechanisms:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">cut'n'paste : you can 
+    copy tasks from other estimates (including past ones that are no longer editable) 
+    - do this via the right-click menu or the toolbar options;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">drag'n'drop : if you 
+    have <a href="#dnd">drag'n'drop</a> enabled you can copy tasks from one estimate 
+    to another in a similar way to copying and pasting;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">import : you can import 
+    all the tasks form another estimate very quickly using the <img src="../../images/import.gif" alt="import" width="16" height="16"> 
+    button found on the 'estimate' tab;</font> 
+    <p><img src="import_wizard.png" width="438" height="415"></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">via <a href="#templates">templates</a>. 
+    </font></li>
+</ul>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Note 
+  that all copying between estimates and templates is carried out at the customer 
+  task level. These operations will only work if you have selected <em>only</em> 
+  customer tasks. Also note that when copying, you must select the customer task 
+  you want the copied tasks to be inserted after. You cannot copy to a blank part 
+  of the estimate, nor to a non-customer task.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">A fifth 
+  mechanism is available in Epic, though this requires customisation - allowing 
+  it to read data in from external documents such as Microsoft Excel spreadsheets.</font></p>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a name="total" id="total"></a><strong>Total 
+  Calculation </strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">So far the figures you have 
+  entered relate to estimated <em>costs</em> for the yard. Now you use these costs 
+  to calculate a quoted price to the customer. </font><font size="2" face="Arial, Helvetica, sans-serif">The 
+  last column displays the total price for that line. For customer tasks it is 
+  the sum of all <a href="#include">included</a> child yard tasks. For yard tasks 
+  it is the sum of all included line items. However the total for line items involves 
+  a more complex calculation. Initially the line item total is the sum of all 
+  manhour, material, subcontract and resource totals. However this is only true 
+  because a new estimate has blank (i.e. zero) mark-ups. <strong>Mark-ups</strong> 
+  are an amount added to base costs to generate a price. A mark-up is a piece 
+  of text that has one of the following formats:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">blank : do not add to 
+    base cost</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'10%' : add 10% to base 
+    costs</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'-10%' : subtract 10% 
+    from base costs</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'+10' : add 10 to base 
+    costs</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'-10' : remove 10 from 
+    base costs</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'~10' : round base costs 
+    to the nearest 10</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'~7.5' : round base costs 
+    to the nearest 7.5</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Mark-ups are applied for 
+  an entire estimate and are added via the 'Totals' <a href="../../concepts/section.htm">section</a> 
+  on the first 'Estimate' tab of the editor. Mark-ups can be individually set 
+  for each of the main cost types and then an additional markup can be applied 
+  to the whole line total. In the example below the estimate's costs consist of 
+  a single line item with 10 manhours with a rate of 10. The applied mark-ups 
+  increase the line item's (and hence estimate's) total as shown:</font></p>
+<blockquote> 
+  <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="totals_section.png" width="578" height="377" border="1"></font></p>
+</blockquote>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Note that this section offers 
+  an immediate way of checking overall estimate costs.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Now experiment with the 
+  estimate adding tasks and line items and applying costs, rates and mark-ups. 
+  Also try <a href="#include">including</a> and excluding tasks to see the effect 
+  on the estimate total.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="export" id="export"></a><strong>Exporting 
+  the Estimate </strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Once you have a few costed 
+  tasks you have a basic estimate. The next step is to export the estimate to 
+  a file for printing or further editing. This is done by clicking the <img src="export.png" alt="export/print" align="texttop"> 
+  button at the top right of the 'Estimate' tab. Click this (if you have not saved 
+  the estimate you will be asked to do so first) and a <a href="../../concepts/wizard.htm">wizard</a> 
+  will open offering the export choices has available:</font></p>
+<blockquote> 
+  <p><img src="export_dialog.png" width="342" height="282"></p>
+</blockquote>
+<p><font size="2" face="Arial, Helvetica, sans-serif">There may be different options 
+  available to you (if you have a customer plug-in) but each will offer you a 
+  file type and then guide you through the creation and saving of the file. Note 
+  that when you are offered save options, if you select 'save in repository' the 
+  document will automatically be recorded with estimate record.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">This is the final stage 
+  in creating an estimate - until the customer agrees the contract and it is time 
+  to <a href="../../howto/estimating/import_estimate.htm">import</a> the estimate's 
+  tasks to the parent project.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">If you are comfortable with 
+  the content of this tutorial so far, you have mastered the heart of Epic's estimating 
+  functionality. All remaining topics in this tutorial are utilities to improve 
+  your productivity in this base functionality, or to add flexibility so that 
+  Epic better suits your style of estimating.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="types" id="types"></a><strong>Task 
+  Types </strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">You 
+  may wish to collate certain types of cost across tasks. This can be done by 
+  assigning task types to individual yard tasks. A task type is simply a piece 
+  of text that categorises the task. Examples might be trade name, 'scaffolding', 
+  or even 'Subcontractor X'. For further detail each task type can also have any 
+  number of sub-types. Task types and subtypes are defined for all estimators 
+  via the Administration plug-in - see <a href="../../howto/gui/change_lists.htm">change 
+  dropdown lists</a>.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Once 
+  you have assigned types to some or all yard tasks, you can then view tasks grouped 
+  by these categories in a third tab. You make this third tab visible via your 
+  </font><font size="2" face="Arial, Helvetica, sans-serif"><a href="#preferences">estimate 
+  preferences<strong>.</strong></a></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a name="preferences" id="preferences"></a><strong>Estimate 
+  Preferences </strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Epic 
+  offers several <a href="../../concepts/preferences.htm">preferences</a> to allow 
+  you to tailor the <a href="../../concepts/gui.htm">GUI</a>'s behaviour. These 
+  can be accessed by <a href="../../howto/user/change_preferences.htm">opening 
+  your preferences</a> and selecting 'Your Preferences / Estimating':</font></p>
+<blockquote> 
+  <p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><img src="estimate_prefs.png" width="484" height="334"></font></p>
+</blockquote>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'open live un-imported 
+    estimates owned by user as editable' : automatically opens estimates assigned 
+    to you in read-write mode whilst they are still editable (once imported they 
+    are not)</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'show second task tree 
+    sorted by task type' : shows a third tab that displays yard tasks grouped 
+    by their task type</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'allow individual estimates 
+    to change columns' : allow columns to be changed via the first tab</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'enable drag'n'drop operations' 
+    : to allow rapid copying and moving, and to enable the use of templates - 
+    see <a href="#dnd">drag'n'drop</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">'automatically add child 
+    tasks for all new tasks' : also adds a single blank line item for each new 
+    yard task.</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Please note that changes 
+  to these settings are not reflected in already open estimates. You will need 
+  close and re-open any estimates.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="columns" id="columns"></a><strong>Customising 
+  Columns</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">You may or may not have 
+  permissions to customise columns. This is set by an administrator in the estimate 
+  system settings:</font></p>
+<blockquote> 
+  <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="estimate_settings.png" width="446" height="405"></font></p>
+</blockquote>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Customisation means to change 
+  column headings, visibility and whether they relate to manhours, purchases, 
+  subcontracts or tariff items. This can be done on an estimate-by-estimate basis.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="dnd" id="dnd"></a><strong>Drag'n'Drop</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Drag'n'drop is a facility 
+  used by advanced users to quickly move/copy records. You click on the icons 
+  of one or more tasks and then, holding down the mouse key 'drag' these records 
+  to another location. In estimating you drag them to another customer task that 
+  you want them inserted after. The standard means to indicate a copy rather than 
+  a move is to hold down the CTRL key when you release the mouse button at the 
+  end of a drag'n'drop operation.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Drag'n'drop is initially 
+  switched off in Epic as some users prefer not to use it. Switching it on via 
+  your <a href="#preferences">preferences</a> allows you to move or copy tasks 
+  within an estimate or copy from one estimate to another. Note as a safety precaution 
+  you cannot move tasks from one estimate to another - if you try a warning message 
+  will be displayed.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="templates" id="templates"></a><strong>Estimate 
+  Templates</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Estimate emplates are a 
+  powerful feature of Epic that allow you to copy common sets of estimated tasks 
+  that you may wish to use again and again. For templates to work you must:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">enable <a href="#dnd">drag'n'drop</a>;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">makes the templates view 
+    visible (see <a href="#rates">rates</a> for how to do this).</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Epic initially comes with 
+  no templates. The idea is for you, personally or at department level, to create 
+  templates as you go along. Whenever you create a set of tasks that you feel 
+  you may use again, you drag one or more customer tasks across to the templates 
+  view. This will open a wizard to allow you to record details about the template:</font></p>
+<blockquote> 
+  <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="template_details.png" width="438" height="415"></font></p>
+</blockquote>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Once you click 'Finish' 
+  this is added to the list of templates:</font></p>
+<blockquote> 
+  <p><img src="template_list.png" width="214" height="313"></p>
+</blockquote>
+<p><font size="2" face="Arial, Helvetica, sans-serif"> Whenever you wish to use 
+  this set of tasks again you can then drag'n'drop the template across onto the 
+  estimate and the tasks will be added (note the CTRL key has to be pressed). 
+  </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">You can have any number 
+  of estimate templates. They are organised by category (which you can filter 
+  on) and have a description. The description - and all the text within the templates' 
+  tasks - can alos be used to filter the displayed templates. Simply type the 
+  text you are looking for in the box at the top.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Templates can be imported 
+  and exported to files using the <img src="../../images/import.png" alt="import"> 
+  and <img src="../../images/export.png" alt="export"> buttons. If these are not 
+  available ensure that templates are allowed to be imported/export via the 'Systems 
+  Settings / Estimating / allow import export of templates' <a href="../../concepts/preferences.htm">preference</a>.</font></p>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/custom_plug-in.htm">custom 
+    plug-in</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/customer.htm">customer</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/estimate.htm">estimate</a></font></li>
+  <li><a href="../../concepts/estimate_template.htm"><font size="2" face="Arial, Helvetica, sans-serif">estimate 
+    template</font></a></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/section.htm">expandable 
+    section</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/gui.htm">GUI</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../../concepts/plug-in.htm">plug-in</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/preferences.htm">preferences</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/project.htm">project</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/task.htm">project 
+    task</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/tab/tab.htm">tab</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/tariff_item.htm">tariff 
+    item</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/view.htm">view</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/gui/change_codes.htm">change 
+    a code format</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/user/change_preferences.htm">change 
+    a user's preferences</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/gui/change_lists.htm">change 
+    dropdown lists</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/estimating/create_estimate.htm">create 
+    a new estimate</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../../howto/estimating/import_estimate.htm#custom">custom 
+    import process</a></font></li>
+  <li><a href="../../howto/estimating/import_estimate.htm"><font size="2" face="Arial, Helvetica, sans-serif">import 
+    tasks from an estimate</font></a></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/estimating/open_estimate.htm">open 
+    an estimate editor</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/gui/open_readwrite.htm">open 
+    read-write editor.</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/gui/switch_plugin.htm">switch 
+    visible plug-in</a></font></li>
+</ul>
+<p class="defaultText">&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

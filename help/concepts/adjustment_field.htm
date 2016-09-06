@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Adjustment Field</title>
+<link href="../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Adjustment Field</h1>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Adjustment 
+  fields are text fields in the <a href="gui.htm">GUI</a> that allow you to enter 
+  some text that will cause a particular calculation to be applied to a numerical 
+  or monetary value. They will disallow any text that does not describe an adjustment 
+  operation. There are the following adjustment operations:</font></p>
+<table width="100%" border="1" cellpadding="1" cellspacing="0" bordercolor="#009999">
+  <tr> 
+    <td width="11%" align="center"><strong><font size="2" face="Arial, Helvetica, sans-serif">Operation</font></strong></td>
+    <td width="89%"><strong><font size="2" face="Arial, Helvetica, sans-serif">Explanation</font></strong></td>
+  </tr>
+  <tr> 
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">+</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">add the following amount 
+      to the value (the default operation so the '+' can be missed out)</font></td>
+  </tr>
+  <tr> 
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">-</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">subtract the following 
+      amount from the value</font></td>
+  </tr>
+  <tr> 
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">%</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">calculate a percentage 
+      of the amount</font></td>
+  </tr>
+  <tr> 
+    <td align="center"><font size="2" face="Arial, Helvetica, sans-serif">~</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">round the value to 
+      the nearest multiple of the following amount</font></td>
+  </tr>
+</table>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Only 
+  a single adjustment operation can be carried out.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Examples 
+  of valid adjustments and their effect:</font></p>
+<table width="100%" border="1" cellpadding="1" cellspacing="0" bordercolor="#009999">
+  <tr align="center"> 
+    <td width="25%"><strong><font size="2" face="Arial, Helvetica, sans-serif">Value</font></strong></td>
+    <td width="66%"><strong><font size="2" face="Arial, Helvetica, sans-serif">Adjustment 
+      Text</font></strong></td>
+    <td width="25%"><strong><font size="2" face="Arial, Helvetica, sans-serif">Result</font></strong></td>
+  </tr>
+  <tr align="center"> 
+    <td width="25%"><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">&lt;blank&gt;</font></td>
+    <td width="25%"><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+  </tr>
+  <tr align="center"> 
+    <td width="25%"><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">+10</font></td>
+    <td width="25%"><font size="2" face="Arial, Helvetica, sans-serif">1010</font></td>
+  </tr>
+  <tr align="center"> 
+    <td width="25%"><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">+10%</font></td>
+    <td width="25%"><font size="2" face="Arial, Helvetica, sans-serif">1100</font></td>
+  </tr>
+  <tr align="center"> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">10</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1010</font></td>
+  </tr>
+  <tr align="center"> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">10%</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1100</font></td>
+  </tr>
+  <tr align="center"> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">-10</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">990</font></td>
+  </tr>
+  <tr align="center"> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">-10%</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">900</font></td>
+  </tr>
+  <tr align="center"> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">~10</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+  </tr>
+  <tr align="center"> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">~9</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">999</font></td>
+  </tr>
+  <tr align="center"> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1000</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">~11</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">1001</font></td>
+  </tr>
+</table>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="gui.htm">GUI</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../tutorials/pricing/pricing_tutorial.htm">pricing 
+    tutorial </a></font></li>
+</ul>
+<p>&nbsp;</p>
+</body>
+</html>

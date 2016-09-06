@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Estimate Tutorial</title>
+<link href="../../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Purchasing Tutorial</h1>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  purchasing.rw<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Purchasing, Project Management, Project Purchase</font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">Incremental 
+  Epic handles purchasing from two perspectives. It fully integrates the purchasing 
+  process into project management, as well as offering a complete, standalone 
+  purchasing control system. </font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">Note 
+  however what Epic is <strong>not</strong>. Incremental Epic does not offer stores 
+  nor asset management functionality, nor is it an accounting system. </font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">A yard 
+  may choose to retain its existing purchasing system and use Epic's extensive 
+  <a href="../../concepts/custom_plug-in.htm">customisation capabilities</a> to 
+  integrate with this existing system. Or it may choose to use Epic as its primary 
+  purchasing system.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">This 
+  tutorial will look at both options. It will start with the dedicated purchasing 
+  functionality, and then look at how this is fully integrated into project management.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">This 
+  tutorial covers:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#item">purchase 
+    item </a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#screen">purchasing 
+    screen </a></font></li>
+  <li><a href="#print"><font size="2" face="Arial, Helvetica, sans-serif">purchase 
+    item wizard</font></a></li>
+  <li><a href="#editor"><font size="2" face="Arial, Helvetica, sans-serif">purchase 
+    item editor</font></a></li>
+  <li><a href="#integration"><font size="2" face="Arial, Helvetica, sans-serif">project 
+    management integration</font></a></li>
+  <li><a href="#alert"><font size="2" face="Arial, Helvetica, sans-serif">purchase 
+    item alerts </font></a></li>
+</ul>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2"><strong><a name="item" id="item"></a>Purchase 
+  Item</strong></font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">The 
+  core 'unit' in purchasing is a <a href="../../concepts/purchase_item.htm">purchase 
+  item</a>. This is either </font><font face="Arial, Helvetica, sans-serif"><font size="2"> 
+  a tangible material or a bought-in service. Purchase Items have a <a href="../../concepts/purchase_item.htm#lifeline">lifeline</a> 
+  just as other core concepts in Incremental Epic such a <a href="../../concepts/project.htm">projects</a> 
+  and <a href="../../concepts/task.htm">tasks</a>. </font></font><font size="2" face="Arial, Helvetica, sans-serif">A 
+  purchaser creates a purchase item and then progresses through its lifeline until 
+  it is used by production. Note that Epic does not manage supplier payments, 
+  nor other accounting-specific functions:</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><img src="lifeline.png" width="547" height="197"></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a name="screen"></a><strong>Purchasing 
+  Screen</strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">The 
+  purchase plug-in gives access to the dedicated purchase screens. <a href="../../howto/gui/switch_plugin.htm">Switch 
+  to</a> the 'Purchases' plug-in. Initially the top left of the screen holds all 
+  the functionality:</font></p>
+<table width="75%" border="0">
+  <tr> 
+    <td width="45%"><img src="screen.png" width="250" height="188"></td>
+    <td width="55%" valign="top"><ol>
+        <li> <font size="2" face="Arial, Helvetica, sans-serif">View purchase 
+          items</font></li>
+        <li> <font size="2" face="Arial, Helvetica, sans-serif">View suppliers 
+          (if added)</font></li>
+        <li> <font size="2" face="Arial, Helvetica, sans-serif">Create a new purchase 
+          item</font></li>
+        <li> <font size="2" face="Arial, Helvetica, sans-serif">Change status 
+          of selected purchase item</font></li>
+        <li> <font size="2" face="Arial, Helvetica, sans-serif">Refresh the visible 
+          list</font></li>
+        <li> <font size="2" face="Arial, Helvetica, sans-serif">Filter visible 
+          purchase items by status</font></li>
+      </ol></td>
+  </tr>
+</table>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">The 
+  purchase items at a particular status are displayed. Use the 'filter' dropdown 
+  to select which status to look at.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Note 
+  that the supplier tab may or may not have a full list of suppliers in it. This 
+  will depend on whether Epic is your primary purchasing system. If it is not 
+  there may be no need to store all the suppliers within Epic.</font></p>
+<p class="defaultText"><a name="wizard"></a><font size="2" face="Arial, Helvetica, sans-serif"><strong>Purchase 
+  Item Wizard</strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Create 
+  a new purchase by clicking the '+' icon. This opens the purchase wizard. Note 
+  that only three bits of information are required by Epic: the description, whether 
+  materials or subcontract, and the <em>cost center</em>. This is in keeping with 
+  Epic's approach of requiring as little information as possible. You can add 
+  much more - but you are not forced to.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">The 
+  <a href="../../concepts/cost_center.htm">cost center</a> is what the purchase 
+  cost is assigned to. It is normally a <a href="../../concepts/task.htm">task</a> 
+  in an open <a href="../../concepts/project.htm">project</a>. Both task and project 
+  must be at specific states. The wizard automatically gives you a list of applicable 
+  cost centers:</font></p>
+<p class="defaultText"><img src="wizard.png" width="525" height="686"></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">Epic 
+  can be configured with various different rules for who can authorise purchase 
+  items. If the user has permission, they will be offered the option to immediately 
+  authorise the purchase item. Else it will be given the status of 'Requested'.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">When 
+  the wizard closes, you can choose to automatically open the purchase request 
+  editor. Alternatively you can double click on the purchase item on the purchase 
+  screen lists. </font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a name="editor"></a><strong>Purchase 
+  Item Editor</strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">The 
+  purchase item editor, like all <a href="../../concepts/editor.htm">editors</a> 
+  has a read-only and a read-write mode. In read-write mode you can see all the 
+  possible information that can be recorded for a purchase item. It is up to the 
+  yard to decide what information Epic manages.</font></p>
+<table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#009999">
+  <tr align="left" valign="top"> 
+    <td width="18%"><p><strong><font size="2" face="Arial, Helvetica, sans-serif">Summary</font></strong></p></td>
+    <td width="82%"><p><font face="Arial, Helvetica, sans-serif"><font size="2">Core 
+        information about the purchase item. The 'Accounts Code' is yard-specific 
+        and can be made mandatory, or simply ignored.</font></font></p></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="18%"><p><strong><font size="2" face="Arial, Helvetica, sans-serif">Alerts</font></strong></p></td>
+    <td width="82%"><p><font face="Arial, Helvetica, sans-serif"><font size="2">A 
+        means for purchasing and production departments to communicate - see <a href="#alert">purchase 
+        item alerts</a> later.</font></font></p></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="18%"><p><strong><font size="2" face="Arial, Helvetica, sans-serif">Payment 
+        Details</font></strong></p></td>
+    <td width="82%"><p><font face="Arial, Helvetica, sans-serif"><font size="2">Most 
+        information here only necessary if Epic is the primary purchase systems. 
+        However the cost is important for invoice generation so may be subject 
+        to other controls such as <a href="../../concepts/alerts/task_alert.htm">task 
+        alerts</a>.</font></font></p></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="18%"><p><strong><font size="2" face="Arial, Helvetica, sans-serif">Lifeline</font></strong></p></td>
+    <td width="82%"><p><font face="Arial, Helvetica, sans-serif"><font size="2">A 
+        graphical representation of the <font face="Arial, Helvetica, sans-serif"><a href="../../concepts/purchase_item.htm#lifeline">lifeline</a></font></font><font size="2">. 
+        Clicking on a status will show dates and durations. Right-clicking will 
+        allow you to change the purchase item's status. </font></font></p></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><p><strong><font size="2" face="Arial, Helvetica, sans-serif">Delivery 
+        / Arrival</font></strong></p></td>
+    <td><p><font face="Arial, Helvetica, sans-serif"><font size="2">A means to 
+        track deliveries.</font></font></p></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><strong><font size="2" face="Arial, Helvetica, sans-serif">Actions</font></strong></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">A history of the purchase 
+      item - who did what, when.</font></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><p><font size="2" face="Arial, Helvetica, sans-serif"><strong>Locations</strong></font></p></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif"><em>(Only visible once 
+      delivery made). </em><br>
+      Once the purchase item arrives, its location can be tracked. Moreover epic 
+      can be configured to enforce a QA process such as all arrived materials 
+      going via a quarantine area.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><strong><font size="2" face="Arial, Helvetica, sans-serif">Notes</font></strong></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Arbitrary text <a href="../../concepts/note.htm">notes</a> 
+      can be added about the purchase item.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><strong><font size="2" face="Arial, Helvetica, sans-serif">Documents</font></strong></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Later versions of Epic 
+      (1.5.8+) permits documents to be stored against purchase items in the <a href="../../concepts/repository.htm">document 
+      repository</a>. </font></td>
+  </tr>
+</table>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">The 
+  editor also allows for the purchase item to be 'exported', ie. sent to another 
+  program such as Microsoft Word or Excel. Such exports are yard-specific and 
+  are how hard copies of purchase orders, receipts etc. can be created.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">A purchaser 
+  then processes the purchase, adding information as required, and reports progress 
+  by changing the status and moving the purchase item along its lifeline. This 
+  is done either by the button at the top right of the editor or by right-clicking 
+  the lifeline. At each status change the purchaser can choose various additional 
+  actions (printing documents, recording delivery details etc.), and may be constrained 
+  by rules set up for the yard (authorisation limits etc.):</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><img src="chnage_status.png" width="551" height="510"></font></p>
+<p class="defaultText"><a name="integration"><font size="2" face="Arial, Helvetica, sans-serif"><strong>Project 
+  Management Integration</strong></font></a></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Those 
+  parts of the purchasing process that a project manager is involved with are 
+  integrated directly into the project management screens. <a href="../../howto/gui/switch_plugin.htm">Switch 
+  to</a> the 'Project Management' plug-in and open the project to which your new 
+  purchase was assigned. The last tab on the project editor lists all purchases 
+  for the project:</font></p>
+<p class="defaultText"><img src="mgmt_project.png" width="957" height="456"></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">The 
+  list can be sorted by any of the columns and full information on a purchase 
+  item is immediately to hand by double-clicking, which opens the <a href="#editor">purchase 
+  item editor</a>.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Clicking 
+  on the 'tasks' tab and selecting an individual task will show all the purchases 
+  from that task, as well as summary cost information. Again double-clicking will 
+  open the full purchase item editor.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><img src="mgmt_task.png" width="957" height="965"></font><font size="2" face="Arial, Helvetica, sans-serif"></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">From here the project manager 
+  can also initiate a purchase request. Clicking the 'request new service/subcontract' 
+  or 'request new materials' button will open the <a href="#wizard">purchase item 
+  wizard</a>, and the new purchase item will immediately appear on the <a href="#screen">screen</a> 
+  of the purchasers.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="alert"></a><strong>Purchase 
+  Item Alerts</strong></font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">A core 
+  inefficiency in many yards is communication between production and purchasing 
+  departments with one side waiting on the other for information of one sort or 
+  another. Epic offers <em>purchase item alerts</em> as one mechanism for mitigating 
+  this issue.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Modeled 
+  on <a href="../../concepts/alerts/task_alert.htm">task alerts</a>, purchase 
+  item alerts present a red/yellow/green 'traffic light' icon for each purchase 
+  item. If someone needs information from another they can raise an alert:</font></p>
+<p class="defaultText"><img src="alet.png" width="400" height="200"></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">This 
+  will affect the traffic light icon. All lists of purchase items can be sorted 
+  by these icons so that users can focus on those items that are highlighted as 
+  needing attention. Moreover purchase item alerts can be integrated into task 
+  alerts so that project managers can not miss, nor avoid, such items:</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><img src="alert_highlight.png" width="466" height="108"></font></p>
+<p>&nbsp;</p>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2"> </font></p>
+<p>&nbsp;</p>
+</body>
+</html>

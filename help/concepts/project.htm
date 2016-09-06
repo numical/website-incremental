@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Project</title>
+<link href="../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Project</h1>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">A <strong>project</strong> 
+  is a single commercial transaction with a <a href="customer.htm">customer</a>, 
+  followed through the entire engagement.&nbsp;&nbsp; A project passes through 
+  a series of statuses. A project normally starts at the <strong>enquiry</strong> 
+  status and then passes through a series of other statuses until completed or 
+  cancelled. The project <strong>lifeline</strong> is the series of statuses that 
+  a project moves through on its way to completion. A lifeline displayed on the 
+  project editor shows these statuses:</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><img src="lifeline.png" width="660" height="69" border="1"></font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">There 
+  are additional statuses if the project is stopped early for some reason (e.g. 
+  estimate is rejected). The full list of statuses is:</font></p>
+<table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#009999">
+  <tr align="left" valign="top"> 
+    <td width="19%" height="23"><font face="Arial, Helvetica, sans-serif" size="2"><strong>Status</strong></font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2"><strong>Description</strong></font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Enquiry</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">A request 
+      for tender has been received from a <a href="customer.htm">customer</a> 
+      but has not yet been acted on.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Enquiry 
+      Declined </font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">A decision 
+      was taken not to estimate for the work - the reason for this can be recorded 
+      and a letter sent.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Estimating</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">Actively 
+      estimating the work.<br>
+      From now on a project can have one or more associated <a href="estimate.htm">estimates</a>.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Awaiting 
+      Acceptance</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">An <a href="estimate.htm">estimate</a> 
+      has been sent off and we are awaiting the decision of the <a href="customer.htm">customer</a>.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Estimate 
+      Rejected </font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">The <a href="customer.htm">customer</a> 
+      rejected the estimate ( the reason for this can be recorded) and the project 
+      is closed.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Awaiting 
+      Work </font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">The <a href="customer.htm">customer</a> 
+      has accepted the estimate but work has not yet commenced. <a href="task.htm">Tasks</a> 
+      can be added to the project but not started. <a href="purchase_item.htm">Purchase 
+      items</a> can be ordered for these tasks.</font></td>
+  </tr>
+  <tr align="left" valign="top">
+    <td><font face="Arial, Helvetica, sans-serif" size="2">Contract Cancelled</font></td>
+    <td><font face="Arial, Helvetica, sans-serif" size="2">The contract has been 
+      cancelled for some unforeseen reason and the project is closed. This option 
+      is available throughout all remaining stages of the project.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Work Ongoing</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">Work has 
+      started. Note that in the case of projects involving docking a <a href="vessel.htm">vessel</a>, 
+      docking dates are completely separate to the project stages. During this 
+      time the the project's <a href="task.htm">tasks</a> can be started and manhours 
+      assigned to them. <a href="purchase_item.htm">Purchase items</a> can continue 
+      to be ordered for these tasks. Optionally, tasks can be <a href="../tutorials/pricing/pricing_tutorial.htm">priced</a>.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Creating 
+      Invoice </font></td>
+    <td width="81%"><p><font face="Arial, Helvetica, sans-serif" size="2">Work 
+        is over. All <a href="task.htm">tasks</a> must be complete or cancelled. 
+        Hence no more manhours can be assigned (though manhours for previous days 
+        can still be <strong>recorded</strong>). <a href="purchase_item.htm">Purchase 
+        item</a> data can be completed and the invoice generated. Tasks can be 
+        <a href="../tutorials/pricing/pricing_tutorial.htm">priced</a>.</font></p>
+      </td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font size="2" face="Arial, Helvetica, sans-serif">Awaiting 
+      Payment</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">The invoice 
+      has been sent and payment is awaited. This period lasts whilst any negotiation 
+      is carried out and may include multiple invoices being sent. Though new 
+      costs cannot be added prices can be modified and new invoices calculated.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%" class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">Contract 
+      Completed </font></td>
+    <td width="81%" class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">All 
+      outstanding invoices have been paid and contract summary information can 
+      be generated.</font></td>
+  </tr>
+</table>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="customer.htm">customer</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="estimate.htm">estimate</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"> <a href="../tutorials/pricing/pricing_tutorial.htm">pricing 
+    tutorial </a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="purchase_item.htm">purchase 
+    item</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="task.htm">task</a></font></li>
+</ul>
+<p><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">How 
+  To's: </font></span></p>
+<ul>
+  <li><a href="../howto/project/change_status.htm"><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../howto/project/add_emergent.htm">add 
+    emergent work</a></font></span></a></li>
+  <li><a href="../howto/project/change_status.htm"><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">change 
+    a project's status</font></span></a></li>
+  <li><a href="../howto/project/create_contract.htm"><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">create 
+    a new contract</font></span></a></li>
+  <li><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../howto/project/create_enquiry.htm">create 
+    a new enquiry</a></font></span></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../howto/estimating/import_estimate.htm">import 
+    tasks from an estimate</a></font><font size="2" face="Arial, Helvetica, sans-serif"></font></li>
+</ul>
+</body>
+</html>

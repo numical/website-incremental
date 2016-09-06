@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Task</title>
+<link href="../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Task</h1>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">A <strong>task</strong> 
+  is an individual job carried out on a <a href="project.htm">project</a>.&nbsp; 
+  Tasks are <a href="cost_center.htm">cost centers</a> - meaning c</font><font size="2" face="Arial, Helvetica, sans-serif">osts 
+  are assigned to individual tasks rather than project.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">A project 
+  contains a list of tasks. In the most straight-forward case this is a simple 
+  list. In this case all tasks are visible to the <a href="customer.htm">customer</a> 
+  in the final invoice. Such tasks are referred to as <a name="customer_task"></a><strong>customer 
+  tasks</strong>.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">However 
+  it is possible that you wish to track costs at a more granular level than what 
+  you eventually present to the customer. This can be done by using <a name="yard_task"><strong>yard 
+  tasks</strong>. These are 'child' </a>tasks to customer tasks. They have costs 
+  assigned to them but their price is rolled-up to the parent customer task. Note 
+  that customer tasks with child yard tasks may still have costs assigned directly 
+  to them.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Like 
+  projects, tasks have their own <a name="lifeline"></a><strong>lifeline</strong> 
+  - a sequence of <strong><a name="status" id="status"></a>statuses</strong> through 
+  which they pass:</font></p>
+<table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#009999">
+  <tr align="left" valign="top"> 
+    <td width="19%" height="23"><font face="Arial, Helvetica, sans-serif" size="2"><strong>Status</strong></font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2"><strong>Description</strong></font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">With Estimator</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">A special 
+      status for <a href="emergent_work.htm">emergent</a> work that must go through 
+      the full estimating process.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Awaiting 
+      Authorisation </font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">The normal 
+      start status for a task. At this stage no costs can be assigned but the 
+      task can be exported, planned etc.<br>
+      Tasks <a href="../howto/estimating/import_estimate.htm">imported from an 
+      estimate</a> normally start at this status.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Authorised</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">The customer 
+      has agreed to pay for this task. At this point costs can be assigned to 
+      the task but <strong>not</strong> manhours.<br>
+      Tasks <a href="../howto/estimating/import_estimate.htm">imported from an 
+      estimate</a> <em>can</em> start at this status.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Started</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">The task 
+      has started and is underway. Costs, including manhours can be assigned to 
+      it.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Paused</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">A task 
+      was started, but work has been halted. This is an informational status only. 
+      The system treats it as a 'Started' task.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Completed</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">Work has 
+      finished. New costs cannot be assigned to it. However there maybe a period 
+      during which manhours can still be assigned to the task - this is dependent 
+      on the <a href="../howto/manhours/manhour_entry.htm">manhour entry</a> set-up.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">Cancelled</font></td>
+    <td><font face="Arial, Helvetica, sans-serif" size="2">The task has been cancelled. 
+      Costs so far assigned will be added to the <a href="invoice.htm">invoice</a> 
+      but no new costs can be assigned.</font></td>
+  </tr>
+</table>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Yard 
+  tasks also offer additional features. They have a <strong><a name="type"></a>type</strong> 
+  and <strong><a name="subtype"></a>subtype</strong> that allow them to be classified, 
+  and a <strong><a name="trade" id="trade"></a>trade</strong>. The classifications can 
+  be whatever you wish, and allow you to aggregate costs any way you wish.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Task 
+  pricing is the subject of a seperate <a href="../tutorials/pricing/pricing_tutorial.htm">tutorial</a>.</font></p>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="cost_center.htm">cost 
+    center </a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="project.htm">project</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../tutorials/pricing/pricing_tutorial.htm">pricing</a></font></li>
+</ul>
+<p>&nbsp;</p>
+<p><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">How 
+  To's: </font></span></p>
+<ul>
+  <li><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/project/add_emergent.htm">add 
+    emergent work</a></font></span></li>
+</ul>
+</body>
+</html>

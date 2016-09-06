@@ -1,0 +1,119 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Purchase Item</title>
+<link href="../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Purchase Item</h1>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif"><font size="2">Epic 
+  focuses on the requesting, authorising and tracking purchase items. </font></font><font face="Arial, Helvetica, sans-serif"><font size="2">A 
+  <span
+ style="font-weight: bold;">Purchase Item</span> is a tangible material or a bought-in 
+  service. A purchase item maps to a line item on a purchase order.</font><font size="2" face="Arial, Helvetica, sans-serif"> 
+  Purchase items are divided into materials and subcontracts. This division is 
+  for clarity only - both are processed identically.</font></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><strong>Categories</strong><br>
+  A purchase item is a <a href="categorised_record.htm">categorised record</a>.</font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif"><font size="2"><strong>Cost 
+  Centre</strong><br>
+  Purchase items are assigned to <a href="cost_center.htm">cost centres</a> - 
+  most normally <a href="task.htm">tasks</a>. Purchase items can be viewed via 
+  the purchases <a href="plug-in.htm">plug-in</a> or on the <font face="Arial, Helvetica, sans-serif"><a href="project.htm">project</a></font> 
+  <a href="editor.htm">editor</a>.</font></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><strong>Lifeline</strong><br>
+  A purchase item has its own <a name="lifeline"></a><strong>lifeline</strong> 
+  - a sequence of statuses through which it passes. This sequence is dependent 
+  upon the business process.</font></p>
+<table width="100%" border="1" cellpadding="2" cellspacing="0" bordercolor="#009999">
+  <tr align="left" valign="top"> 
+    <td width="19%" height="23"><font face="Arial, Helvetica, sans-serif" size="2"><strong>Status</strong></font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2"><strong>Description</strong></font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Requested</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">A purchase 
+      item has been created and requires a suitably authorised user to agree to 
+      it.<br>
+      This may involve first seeking supplier quotes to check against authorised 
+      spending limits.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Authorised</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">A suitably 
+      authorised user has accepted this purchase item must be bought.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">On Hold</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">An item, 
+      previously at either 'Requested' or 'Authorised' that is not being progressed</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">On Order</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">The purchase 
+      item has been ordered from a supplier.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">In Quarantine</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">This status 
+      may not be used - it depends on set-up of the purchasing process.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td width="19%"><font face="Arial, Helvetica, sans-serif" size="2">Available</font></td>
+    <td width="81%"><font face="Arial, Helvetica, sans-serif" size="2">The item 
+      has been delivered (and is necessary inspected and approved) so is available 
+      for use.</font></td>
+  </tr>
+  <tr align="left" valign="top"> 
+    <td><font face="Arial, Helvetica, sans-serif" size="2">Used</font></td>
+    <td><font face="Arial, Helvetica, sans-serif" size="2">The task has been cancelled. 
+      Costs so far assigned will be added to the <a href="invoice.htm">invoice</a> 
+      but no new costs can be assigned.</font></td>
+  </tr>
+</table>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><strong>Categorised 
+  Costs</strong></font><font size="2" face="Arial, Helvetica, sans-serif"><br>
+  Purchase items normally record a single figure for their cost. <br>
+  H</font><font size="2" face="Arial, Helvetica, sans-serif">owever following 
+  the principle of <a href="progressive_disclosure.htm">progressive disclosure</a>, 
+  you can <a href="../howto/purchasing/use_categorised_costs.htm">choose to view 
+  and use 'categorised' costs</a> for the purchase item.<br>
+  </font><font size="2" face="Arial, Helvetica, sans-serif">Epic actually stores 
+  up to three fields for the cost of a purchase. <br>
+  Each field can represent anything you choose, for instance estimated cost, committed 
+  cost and actual cost. <br>
+  However note that for price calculations, Epic simply sums all of these fields. 
+  <br>
+  By default, when using only a single figure, Epic simply uses the first of the 
+  fields.<br>
+  Categorised costs have nothing to do with the purchase item record's categories.</font></p>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="categorised_record.htm">categorised 
+    record</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="cost_center.htm">cost 
+    center </a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif"><font size="2"> <a href="editor.htm">editor</a></font></font></li>
+  <li><font face="Arial, Helvetica, sans-serif"><font size="2"> <a href="plug-in.htm">plug-in</a></font></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="progressive_disclosure.htm">progressive 
+    disclosure</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif"><font size="2"><a href="project.htm">project</a></font></font></li>
+  <li><a href="../tutorials/purchasing/purchase_tutorial.htm"><font size="2" face="Arial, Helvetica, sans-serif">purchasing 
+    tutorial</font></a></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="task.htm">task</a></font></li>
+</ul>
+<p><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">How 
+  To's: </font></span></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../howto/purchasing/create_purchase_item.htm">create 
+    a new purchase item</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../howto/purchasing/use_categorised_costs.htm">use 
+    categorised costs</a></font></li>
+</ul>
+</body>
+</html>

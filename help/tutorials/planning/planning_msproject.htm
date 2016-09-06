@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Planning Tutorial</title>
+<link href="../../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Planning Tutorial - MS Project</h1>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  planning.ro, planning.rw<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Project Management, Planning</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">This 
+  version of the <a href="planning_tutorial.htm">Planning Tutorial</a> discusses 
+  planning via integration with Microsoft Project&#8482;.<br>
+  There is another version that discusses using<a href="planning_internal.htm"> 
+  Incremental Epic's in-built planning functionality</a>.<br>
+  The contents are:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#overview">overview</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#prereqs">pre-requisites</a></font></li>
+  <li><a href="#setup"><font size="2" face="Arial, Helvetica, sans-serif">set 
+    up</font></a></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#create">create 
+    a plan</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#view">view 
+    / update the plan</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#sync">synchronise 
+    the plan</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#data">planning 
+    data and synchronisation constraints</a> </font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#delete">delete 
+    the plan</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#timeout">handling 
+    timeouts</a></font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="overview" id="overview"></a><strong>Overview</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">You use a <a href="../../concepts/project.htm">project's</a> 
+  <a href="../../concepts/task.htm">tasks</a> to create a plan in your planning 
+  tool. The plan is saved as a file in the <a href="../../concepts/repository.htm">document 
+  repository</a>, from where the plan can then be viewed and updated directly. 
+  With most planning tools, Incremental Epic also allows you to synchronise the 
+  data between it and the plan.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="prereqs" id="prereqs"></a><strong>Pre-requisites</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">To generate or update a 
+  plan the following must be true:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">you must have the planning 
+    plug-in(s) installed;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">you must have the read-write 
+    planning <a href="../../concepts/activity.htm">activity</a>;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">the <a href="../../concepts/repository.htm">document 
+    repository</a> must be set up;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">the planning tool must 
+    be have been correctly installed on your computer;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">the <a href="../../concepts/project.htm">project</a> 
+    must have a status of 'Awaiting Work' or later;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">there must be <a href="../../concepts/task.htm">tasks</a> 
+    in the project.</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="setup"></a><strong>Set 
+  Up</strong></font></p>
+<ol>
+  <li><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/user/change_preferences.htm">Open 
+    your user preferences</a> and select 'System Settings / Planning' (you must 
+    have the administration activity to do this);</font></span></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Choose 'No internal planning' 
+    and select the external planning tool to use - in the absence of <a href="../../concepts/custom_plug-in.htm">custom 
+    plug-ins</a> you have only one choice - Microsoft Project:</font> </li>
+  <li> 
+    <p><img src="planning_prefs_msproject.png" width="635" height="555"></p>
+  </li>
+  <li><font size = "2" face="Arial, Helvetica, sans-serif">Note that there is nothing to 
+    stop you using both internal and external planning simultaneouly - but it 
+    is not recommended!</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Set any tool-specific 
+    settings - note you may have to change settings on the tool itself - see any 
+    notes on the screen:</font> 
+    <p><img src="msproject_prefs.png" width="668" height="527"></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">With Microsoft Project 
+    you must select the format of the plan to generate:</font> 
+    <ul>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">choose '.mpx' if 
+        you are using Project 98 or earlier - this is the fastest format but unfortunately 
+        is not supported by later versions;</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">choose '.mpp' for 
+        later versions;</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">the final option 
+        '.xml' is only for support purposes.</font></li>
+    </ul>
+    <p>&nbsp;</p>
+  </li>
+</ol>
+<p id="overview" name="overview"><font size="2" face="Arial, Helvetica, sans-serif"><a name="create" id="create"></a><strong>Create 
+  a Plan</strong></font></p>
+<ol>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/project/open_project.htm">Open 
+    a project</a> at the 'Awaiting Work' stage or later, which has <a href="../../concepts/task.htm">tasks</a> 
+    (either <a href="../../howto/estimating/import_estimate.htm">imported from 
+    an estimate</a> or manually <a href="../../howto/project/add_emergent.htm">added 
+    as emergent work</a>);</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Right-click on any task 
+    in the 'Tasks' tab; if all pre-requisites are satisfied you will see a 'Planning' 
+    option; click this:]#</font> 
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="tasks_popup_menu.png" width="634" height="463"></font></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">If there is no plan associated 
+    with the project yet, you will be presented with the project creation screen:</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">A name for the project 
+    plan file and a start date for the plan will be suggested. The start date 
+    is based on the date work has been recorded as started within Epic. If there 
+    is no such date you will have to enter this manually. You will also have the 
+    options:</font> 
+    <ul>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">add unauthorised 
+        tasks : whether or not the plan will include tasks that are with an estimator 
+        or are unauthorised;</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">use estimate manhours 
+        for duration : <a href="../../concepts/estimate.htm">estimates</a> in 
+        Epic do not have the concept of elapsed time - they record how many manhours 
+        a task might take but not how many men will work on it. Hence Epic cannot 
+        tell the planning tool how long a task will take (that is after all the 
+        point of the plan!). However as a first step, Epic can calculate the task 
+        duration based on a single person working on the task, and pass this value 
+        to the plan (note that tasks without estimated hours will have a zero 
+        duration so will appear as milestones). If you choose not to use this 
+        option all tasks are created with an elapsed time of a single day.</font></li>
+    </ul>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Click 'Finish' and the 
+    plan will be created and opened within the planning tool. This can be quite 
+    a long process - see <a href="#timeout">handling timeouts</a> below.</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Close the planning tool 
+    and switch to the 'Project' tab of the <a href="../../concepts/project.htm">project</a> 
+    <a href="../../concepts/editor.htm">editor</a>. In the 'Documents' <a href="../../concepts/section.htm">section</a> 
+    you will see the project plan:</font> 
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="docs_section.png" width="599" height="80" border="1"></font></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">See <a href="#data">planning 
+    data</a> for what information is passed to the planning tool when a plan is 
+    created.</font></li>
+</ol>
+<p>&nbsp;</p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="view" id="view"></a><strong>View 
+  / Update the Plan</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Once a plan has been created 
+  it can be accessed from the <a href="../../concepts/project.htm">project</a> 
+  <a href="../../concepts/editor.htm">editor</a> by anyone with access to the 
+  project and the planning <a href="../../concepts/activity.htm">activity</a>. 
+  The plan can be accessed from the 'Documents' section as illustrated above or 
+  from the 'Planning' option on the right-click menu of the 'Tasks' tab - as explained 
+  in the next section.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Note that Epic cannot control 
+  what happens to the plan within the planning tool. You may wish to set up complimentary 
+  security settings within the tool.</font></p>
+<p>&nbsp;</p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="sync" id="sync"></a><strong>Synchronise 
+  the Plan</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">With most planning tools 
+  you can synchronise the plan with the latest data within Epic.</font></p>
+<ol>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"> If a plan has already 
+    been created for the <a href="../../concepts/project.htm">project</a>, when 
+    you click the 'Planning' option on the right-click menu of the 'Tasks' tab 
+    you will see this screen (note that if you have read-only planning permissions 
+    the plan will open instead):</font> 
+    <p><img src="view.png" width="444" height="415"></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Clicking 'Finish' from 
+    here will simply open the plan. If you instead click the 'synchronise project 
+    plan with Epic' option the 'Next' button will be enabled. Click this and the 
+    available synchronisation options will be displayed:</font> 
+    <p><img src="sync.png" width="444" height="415"></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Your options are:</font> 
+    <ul>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">add unauthorised 
+        tasks : as with <a href="#create">creating a plan</a>;</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">use estimate manhours 
+        for duration : as with <a href="#create">creating a plan</a>;</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">update projected 
+        dates in Epic - see<a href="#data"> planning data</a> below.</font></li>
+    </ul>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Click 'Finish' . The 
+    Epic and plan data will be synchronised. Note this may take some time and 
+    be subject to timeouts - see <a href="#timeout">handling timeouts</a> below.</font></li>
+</ol>
+<blockquote> 
+  <p>&nbsp;</p>
+</blockquote>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="data" id="data"></a><strong>Planning 
+  Data and Synchronisation Constraints</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">When creating a project 
+  plan Epic passes the following data to the planning tool [values in square brackets 
+  indicate the Microsoft Project fields used when it is the selected planning 
+  tool]:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">code [text1]</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">customer code [text2]</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">status [text3]</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">description [notes]</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">actual start date [start 
+    start]</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">actual end date [actual 
+    finish]</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">percentage complete [percentage 
+    complete]</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">it also passes an id 
+    number that must be stored by the tool [number20]</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">By default this is done 
+  for all tasks that are authorised, or if you choose the 'include unauthorised 
+  tasks' options, for all tasks.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">If you do not wish to synchronise 
+  the plan at a later date, you can do anything you want with the plan. However 
+  if you wish synchronise later you must not add non-summary tasks directly to 
+  the plan. All tasks that can have costs assigned to them must come from Epic.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">On synchronisation all the 
+  data listed above will be updated with the latest values from Epic - including 
+  new tasks that have appeared either as emergent work or as newly authorised. 
+  Optionally the following data can flow the other way from the plan to Epic:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">projected start date 
+    </font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">projected end date</font></li>
+</ul>
+<p>&nbsp;</p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="delete" id="delete"></a><strong>Delete 
+  the Plan</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">A project can only have 
+  a single plan associated with it at any one time. If you wish to start again 
+  you must delete the existing plan first. You do this via the 'Planning' option 
+  on the right-click menu of the 'Tasks' tab, and then selecting the 'delete project 
+  plan' option.</font></p>
+<p>&nbsp;</p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="timeout" id="timeout"></a><strong>Handling 
+  Timeouts</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Planning tools can be quite 
+  slow generating plans - particularly during the synchronisation process. Epic 
+  waits for a certain length of time for the planning tool to report that it has 
+  completed. If this does not occur Epic then time out and reports an error. Frequently 
+  the wait is due to the planning tool loading up for the first time and simply 
+  repeating the action immediately will work. Try these steps if Epic reports 
+  a time out:</font></p>
+<ol>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Try again immediately;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Open the planning tool 
+    without any plan and then try again;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Increase the 'document 
+    timeout' in your <a href="../../concepts/preferences.htm">preferences</a> 
+    ( <span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">'System 
+    Settings / Document Generation / Timeout(seconds)' );</font></span></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">If all of the above fail, 
+    or you get an error message form the planning tool, contact your system administrator.</font></li>
+</ol>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/activity.htm">activity</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/custom_plug-in.htm">custom 
+    plug-in</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/repository.htm">document 
+    repository</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/editor.htm">editor</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/estimate.htm">estimate</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/section.htm">expandable 
+    section</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/plan.htm">plan</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/preferences.htm">preferences</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/project.htm">project</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/task.htm">tasks</a></font></li>
+</ul>
+<p class="defaultText">&nbsp;</p>
+<p><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">How 
+  To's: </font></span></p>
+<ul>
+  <li><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/project/add_emergent.htm">add 
+    emergent work</a></font></span></li>
+  <li><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/user/change_preferences.htm">change 
+    a user's preferences</a></font></span></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/estimating/import_estimate.htm">import 
+    tasks from an estimate</a> </font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/project/open_project.htm">open 
+    a project</a></font></li>
+</ul>
+<p class="defaultText">&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

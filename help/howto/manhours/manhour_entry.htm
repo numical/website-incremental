@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Enter Manhours</title>
+<link href="../../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Enter Manhours</h1>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  manhours.entry, manhours.authorise<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Manhours Entry</font></p>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">You 
+  can run <a href="../../concepts/project.htm">projects</a> in Epic without entering 
+  manhours - however as well as being a major proportion of overall costs on a 
+  repair contract, labour costs are one of the core means of monitoriing and controlling 
+  contracts. </font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Manhours 
+  can either be recorded directly into Epic or can be imported from other electronic 
+  systems. This second approach is not discussed here as it is necessarily tied 
+  to your existing systems and requires a <a href="../../concepts/custom_plug-in.htm">custom 
+  plug-in.</a> Note though that this is a very straightforward process as Epic 
+  has been designed with this in mind.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">For 
+  recording manhours directly into Epic you may or may not have <a href="../../concepts/employee.htm">employees</a> 
+  recorded on Epic. Here we assume that you do have employee records stored on 
+  Epic. If not you will need to select the 'Manhour entry by employee code alone' 
+  option under 'Preferences / System Settings / Manhour Entry'. This will enable 
+  Epic to record manhours against employee codes even though it does not itself 
+  store the employee records. In this case the entry screen shown below will look 
+  a little different.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">You 
+  must also <a href="change_manhour_rates.htm">set up whatever manhour rates</a> 
+  are required by any other systems that use Epic's data.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Entering 
+  manhours involves three main stages:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">enter manhour records 
+    : this records an individual employee's hours for an individual <a href="../../concepts/cost_center.htm">cost 
+    center</a> (normally a <a href="../../concepts/task.htm">task</a>) for one 
+    specific date;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">authorise manhour records 
+    : all entered records are then confirmed via an authorisation process - this 
+    requires a different <a href="../../concepts/activity.htm">activity</a> to 
+    the entry process enhancing security</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">apply manhours : all 
+    records that have been authorised can then be summed and added to the recorded 
+    hours for each project.</font></li>
+</ul>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">These 
+  three distinct stages are specified in order to best fit with different yards' 
+  manhour recording process and to ensure that data, once entered, is never lost. 
+  Though this might sound like a laborious process, much work has been carried 
+  out on Epic's <a href="../../concepts/gui.htm">GUI</a> to ensure this is actually 
+  a very fast process:</font></p>
+<ol>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../gui/switch_plugin.htm">Switch</a> 
+    to the Manhours Entry plug-in;</font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="2">If you have a <a href="../../concepts/custom_plug-in.htm">custom 
+    plug-in</a> there may be an additional 'Import' button;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Click the 'Entry' button 
+    to open the entry window. This is a carefully designed window that allow fast 
+    entry of manhour records (the first of the above stages). You move from left 
+    to right, selecting in turn:</font> 
+    <ul>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">the employee (Epic 
+        ensures only valid options are offered);</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif"> the cost center 
+        / task (Epic ensures only valid options are offered);</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">the number of hours 
+        (note the 15minute granularity) ;</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">and finally the manhour 
+        rate (these are <a href="change_manhour_rates.htm">configured</a> via 
+        your <a href="../../concepts/preferences.htm">preferences</a>);</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">clicking one of the 
+        big 'add ...' buttons adds a record and resets the window for the next.</font></li>
+    </ul>
+  </li>
+  <blockquote> 
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="manhour_entry.png" width="1065" height="593"></font></p>
+  </blockquote>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">It does not matter if 
+    errors are made as these can be rectified at the next stage.</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Once you have added all 
+    manhour records (or as many as you wish), click the 'Authorise' button.</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">This opens the next window 
+    which corresponds with the next stage of the process. This window lists all 
+    previously entered records. These have not yet been saved to the database. 
+    You can save these at any point via the 'save button' (if the save button 
+    is not enabled ensure one or more records are highlighted) but until they 
+    have been authorised they will not be applied to project manhour totals. Authorise 
+    using the right-click menu. You can also:</font> </li>
+  <ul>
+    <li><font size="2" face="Arial, Helvetica, sans-serif">select all records 
+      (right-click menu)</font></li>
+    <li><font size="2" face="Arial, Helvetica, sans-serif">delete incorrect records 
+      (right click menu)</font></li>
+    <li><font size="2" face="Arial, Helvetica, sans-serif">retrieve previously 
+      saved but unauthorised record (the 'add previously unauthorised records' 
+      button'):</font> 
+      <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="manhour_authorise.png" width="1065" height="593"></font></p>
+    </li>
+  </ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Once you save, the records 
+    are removed from the window (unauthorised records can always re-retrieved 
+    via 'add previously unauthorised records' ). The final stage can now be carried 
+    out. </font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Click the 'Recalc' button 
+    - this will apply the manhours for all new authorised records. No window is 
+    needed so a message appears instead whilst this is happening:</font> </li>
+  <blockquote> 
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="manhour_recalc.png" width="450" height="189"></font></p>
+  </blockquote>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"> You can now close the 
+    windows. If you forgot to save all entered records you will be warned.</font></li>
+</ol>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> 
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/activity.htm">activity</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/cost_center.htm">cost 
+    center</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/custom_plug-in.htm">custom 
+    plug-in</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/employee.htm">employee</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/gui.htm">GUI</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/preferences.htm">preferences</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../../concepts/project.htm">project</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/task.htm">task</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="change_manhour_rates.htm">change 
+    manhour rates</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../gui/switch_plugin.htm">switch 
+    visible plug-in</a></font></li>
+</ul>
+</p>
+</body>
+</html>

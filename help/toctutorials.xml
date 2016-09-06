@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Tutorials" link_to="toc.xml#tutorials"> 
+	<topic label="Getting Started Tutorial"  href="help/tutorials/getting_started/getting_started_tutorial.htm"/> 
+	<topic label="Estimate Tutorial"  href="help/tutorials/estimating/estimate_tutorial.htm"/> 
+	<topic label="Planning Tutorial"  href="help/tutorials/planning/planning_tutorial.htm"/> 
+	<topic label="Pricing Tutorial"  href="help/tutorials/pricing/pricing_tutorial.htm"/> 
+	<topic label="Purchasing Tutorial"  href="help/tutorials/purchasing/purchase_tutorial.htm"/> 
+</toc>

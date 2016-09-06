@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Create a New Purchase Item</title>
+<link href="../../incr.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1 class="emphasisText">Create a New Purchase Item</h1>
+<p class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2">You 
+  can create a <a href="../../concepts/purchase_item.htm">purchase item</a> in 
+  one of two ways:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#scratch">from 
+    scratch</a>;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#project">via 
+    the project</a> editor for a project with a status of 'Awaiting Work' or beyond.</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Once the purchase item has 
+  been created, it then needs to be progressed through its own <a href="../../concepts/purchase_item.htm#lifeline">lifeline</a>.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><strong><a name="scratch"></a>From 
+  Scratch</strong></font></p>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  purchase.rw, purchase.authorise<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Purchases</font></p>
+<ol>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../gui/switch_plugin.htm">Switch</a> 
+    to the Purchase plug-in;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Ensure that you are viewing 
+    the purchase items list and click the new purchase item button:</font> 
+    <p><img src="create_purchase_item.png" width="242" height="131"></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">A single window <a href="../../concepts/wizard.htm">wizard</a> 
+    will open allowing you to enter the required information. This includes selecting 
+    a <a href="../../concepts/cost_center.htm">cost center</a> (normally a <a href="../../concepts/task.htm">task</a>). 
+    Epic ensures that you can only assign purchase items to valid cost centers 
+    (e.g. tasks must be authorised or started on an on-going <a href="../../concepts/project.htm">project</a>):</font> 
+    <p><img src="create_purchase_item.png" width="438" height="554"></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">The code may have to 
+    be manually entered , depending on your <a href="../gui/change_codes.htm">code 
+    settings</a>;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Once you have entered 
+    sufficient information the 'Finish' button will be enabled. Clicking this 
+    will close the wizard and open the purchase item <a href="../../concepts/editor.htm">editor</a> 
+    allowing you to enter further information.</font></li>
+</ol>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><strong><a name="project" id="project"></a>Via 
+  Project </strong></font></p>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  purchase.rw, purchase.authorise, task.rw<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Project Management, Purchases</font></p>
+<ol>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../project/open_project.htm">Open 
+    the parent project's editor</a>;</font></li>
+  <li><a href="../gui/open_readwrite.htm"><font size="2" face="Arial, Helvetica, sans-serif">Open 
+    the equivalent read-write editor</font></a>;</li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"> Select the 'Tasks' <a href="../../concepts/tab/tab.htm">tab</a> 
+    for the project (if there is no such tab then the project is at an inappropriate 
+    status) and then select the task for which the new purchase item is for;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Select the 'Purchases' 
+    sub-tab and then open either 'Materials' or 'Subcontracts' section within 
+    this (depending on whether you want to initiate a purchase of material or 
+    a service. The 'request new ...' button is enabled:</font> 
+    <p><img src="project_editor.png" width="731" height="688" border="1"></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Click this button and 
+    the new purchase item wizard opens. This time the cost center is pre-selected;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Once you click 'Finish' 
+    the item is added to the list displayed in the project editor. To add more 
+    details double-click this and the project editor will open.</font></li>
+</ol>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/cost_center.htm">cost 
+    center</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/editor.htm">editor</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/project.htm">project</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../../concepts/purchase_item.htm">purchase 
+    item</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/tab/tab.htm">tab</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/task.htm">task</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/wizard.htm">wizard</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../gui/change_codes.htm">change 
+    a code format</a></font></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../project/open_project.htm">open 
+    a project's editor</a></font></li>
+  <li><span class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2"><a href="../gui/open_readwrite.htm">open 
+    read-write editor</a></font></span></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../gui/switch_plugin.htm">switch 
+    visible plug-in</a></font></li>
+</ul>
+<p></p> </p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="How To's" link_to="toc.xml#howtos"> 
+    <topic label="Add a user"  href="help/howto/user/add_user.htm"/>
+	<topic label="Add an exchange rate"  href="help/howto/currency/add_exchange_rate.htm"/>
+	<topic label="Add emergent work"  href="help/howto/project/add_emergent.htm"/> 
+	<topic label="Change a code format"  href="help/howto/gui/change_codes.htm"/>
+	<topic label="Change a project's status"  href="help/howto/project/change_status.htm"/>
+    <topic label="Change a user's activities"  href="help/howto/user/change_activities.htm"/>
+	<topic label="Change a user's preferences"  href="help/howto/user/change_preferences.htm"/>
+	<topic label="Change dropdown lists"  href="help/howto/gui/change_lists.htm"/>
+	<topic label="Change expanded sections"  href="help/howto/gui/change_sections.htm"/>
+	<topic label="Change manhour rates"  href="help/howto/manhours/change_manhour_rates.htm"/>
+	<topic label="Change visible task columns"  href="help/howto/task/using_layouts.htm#Columns"/>
+	<topic label="Configure task alerts"  href="help/howto/task/configure_alerts.htm"/>
+	<topic label="Configure the document repository"  href="help/howto/document/configure_repository.htm"/>
+    <topic label="Convert a company"  href="help/howto/marketing/convert_company.htm"/>
+	<topic label="Create a new association"  href="help/howto/marketing/create_association.htm"/> 
+	<topic label="Create a new contact"  href="help/howto/marketing/create_contact.htm"/> 
+	<topic label="Create a new contract"  href="help/howto/project/create_contract.htm"/> 
+	<topic label="Create a new company"  href="help/howto/marketing/create_company.htm"/>
+	<topic label="Create a new customer"  href="help/howto/marketing/create_customer.htm"/>
+	<topic label="Create a new enquiry"  href="help/howto/project/create_enquiry.htm"/> 
+	<topic label="Create a new employee"  href="help/howto/personnel/create_employee.htm"/> 
+	<topic label="Create a new estimate"  href="help/howto/estimating/create_estimate.htm"/> 
+	<topic label="Create a new invoice"  href="help/howto/task/export_tasks.htm"/> 
+	<topic label="Create a new purchase item"  href="help/howto/purchasing/create_purchase_item.htm"/> 
+	<topic label="Create a plan"  href="help/howto/project/create_plan.htm"/> 
+	<topic label="Create a report"  href="help/howto/report/create_report.htm"/> 
+	<topic label="Create a new supplier"  href="help/howto/purchasing/create_supplier.htm"/> 
+	<topic label="Create a new vessel / product"  href="help/howto/marketing/create_product.htm"/>
+	<topic label="Enter manhours"  href="help/howto/manhours/manhour_entry.htm"/>
+	<topic label="Export a project's tasks"  href="help/howto/task/export_tasks.htm"/>
+	<topic label="Import an estimate"  href="help/howto/estimating/import_estimate.htm"/> 
+	<topic label="Invoice generation"  href="help/howto/invoice/invoice_generation.htm"/> 
+	<topic label="Log in"  href="help/howto/login/login.htm"/>
+	<topic label="Open an estimate's editor"  href="help/howto/estimating/open_estimate.htm"/>
+	<topic label="Open a Gantt chart"  href="help/howto/project/open_gantt.htm"/>
+	<topic label="Open a project's editor"  href="help/howto/project/open_project.htm"/>
+	<topic label="Open read-write editor"  href="help/howto/gui/open_readwrite.htm"/>
+	<topic label="Refresh display"  href="help/howto/gui/refresh.htm"/>
+	<topic label="Run a report"  href="help/howto/report/run_report.htm"/> 
+	<topic label="Show empty sections"  href="help/howto/gui/show_empty_sections.htm"/>
+	<topic label="Show / hide messages and questions"  href="help/howto/gui/dialog_preferences.htm"/>
+	<topic label="Switch visible plug-in"  href="help/howto/gui/switch_plugin.htm"/>
+	<topic label="Use categorised costs"  href="help/howto/purchasing/use_categorised_costs.htm"/> 
+	<topic label="Use multiple currencies"  href="help/howto/currency/use_multi_currency.htm"/>
+	<topic label="Using layouts"  href="help/howto/task/using_layouts.htm"/>
+</toc>

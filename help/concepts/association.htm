@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Association</title>
+<link href="../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Association</h1>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Most 
+  contact management software is hierarchical - i.e.: a company <em>owns</em> 
+  one or more contacts that <em>belong</em> exclusively to that company:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Company 1</font> 
+    <ul>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">Contact 1</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">Contact 2</font></li>
+    </ul>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Company 2</font> 
+    <ul>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">Contact 3</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">Contact 4</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">etc.</font></li>
+    </ul>
+  </li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Hence Contact 1 is known 
+  only to Customer 1 and will be deleted if Company 1 is deleted..</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"> Epic 
+  is different. In Epic, <a href="company.htm">companies</a> (and their specialisations), 
+  <a href="product.htm">products</a> (and their specialisations) and <a href="contact.htm">contacts</a> 
+  are all first-order, stand-alone entities. They do not belong to any other entity. 
+  However each can be associated with any number of the others. An <strong>association</strong> 
+  records that there is (or was) a relationship between two records. It records:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"> a description of the 
+    relationship : e.g. 'Managing Director', 'Owned By'</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">whether this relationship 
+    is current (defaults to true)</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"> optionally, a start 
+    date for the relationship</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">optionally, an end date 
+    for the relationship</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Epic can record associations 
+  between:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"> <a href="company.htm">companies</a> 
+    (and their specialisations), and <a href="contact.htm">contacts</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="product.htm">products</a> 
+    (and their specialisations) and <a href="customer.htm">customers</a> (a specialisation 
+    of company)</font></li>
+</ul>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Hence, 
+  for example, a contact record can be associated with several <a href="customer.htm">customer</a> 
+  records to track perhaps their employment history or the fact that they are 
+  employed by multiple organisations at once. In the same way, within ship repair 
+  a <a href="vessel.htm">vessel's</a> ownership history can be tracked.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Associations 
+  are shown and edited via the main editors for each type of record:</font></p>
+<blockquote> 
+  <p><font size="2" face="Arial, Helvetica, sans-serif">a contact's company associations 
+    (read-only) : <img src="contact_cust_assoc_ro.png" width="543" height="92" border="1" align="texttop"></font></p>
+  <p><font size="2" face="Arial, Helvetica, sans-serif">a vessel's customer associations 
+    (read-write) :</font></p>
+  <p><font size="2" face="Arial, Helvetica, sans-serif"> <img src="vessel_cust_assoc_rw.png" width="407" height="153" border="1" align="texttop"></font></p>
+  <p class="defaultText">&nbsp;</p>
+</blockquote>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="company.htm">company</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="contact.htm">contact</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="customer.htm">customer</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="product.htm">product</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="vessel.htm">vessel</a></font></li>
+</ul>
+<p><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">How 
+  To's: </font></span></p>
+<ul>
+  <li><a href="../howto/marketing/create_association.htm"><font size="2" face="Arial, Helvetica, sans-serif">create 
+    a new association</font></a></li>
+</ul>
+</body>
+</html>

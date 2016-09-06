@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Invoice Generation</title>
+<link href="../../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Invoice Generation</h1>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  invoice.ro<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Invoice, Document</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Invoices can be generated 
+  any time after work has started on a <a href="../../concepts/project.htm">project</a>. 
+  </font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Incremental 
+  Epic can produce:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><em><a href="#running">running</a></em><a href="#running"> 
+    invoices</a> - a snapshot of the commercial position of ongoing work;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><em>staged</em> invoices 
+    - payment demands for work to date, or a subset of finalised work</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><em>final</em> invoices 
+    - final payment demand for all work once completed, either taking into account 
+    previous staged invoices or not.</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Invoice generation is a 
+  special case of exporting tasks using the prices calculated by Epic or edited 
+  by you (see the <a href="../../tutorials/pricing/pricing_tutorial.htm">pricing 
+  tutorial</a> for more). You select which <a href="../../concepts/task.htm">tasks</a> 
+  you want to include on the invoice and click the 'export' menu option.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">You then choose what format 
+  to export to. Out-of-the-box, Incremental Epic Microsoft Word and Excel options 
+  though you may have further options available if you have a <a href="../../concepts/custom_plug-in.htm">custom 
+  plug-in</a> for invoicing. The different options offer different formatting 
+  choices but all invoice exports offer the following 'Price Options' that permit 
+  staged invoicing: </font></p>
+<blockquote>
+  <p> <img src="price_options.png" width="427" height="87" border="1"></p>
+</blockquote>
+<p><font size="2" face="Arial, Helvetica, sans-serif">The default values (as shown 
+  above) will simply use the full price for each task every time an invoice is 
+  generated.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">However if 'ignore previously 
+  invoiced amounts' is unchecked the price on the invoice will be the full price 
+  minus any amount recorded as previously invoiced.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">If 'record invoiced amount' 
+  indicates whether to record the invoice amount. If so, the price put on the 
+  invoice will be recorded and added to any previous amount. This can be used 
+  the next time an invoice is generated.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">An example:</font></p>
+<p><img src="task_details.png" width="956" height="246" border="1"> </p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">This example task has a 
+  price of &pound;4003.42 of which &pound;1000 has already been invoiced.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">If an invoice is generated 
+  using the default price options, the task's price will appear as &pound;4003.42. 
+  However if 'ignore previously invoiced amounts' is unchecked, the price on the 
+  invoice will appear as &pound;<strong>3</strong>003.42.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"> If 'record invoiced amount' 
+  is also checked the total invoiced (&pound;1000 + &pound;3003.42 = &pound;4004.32) 
+  will be recorded and the next time the invoice is generated with the 'ignore 
+  previously invoiced amounts' unchecked, the price will be &pound;0.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="running"></a>Running 
+  invoices are produced in exactly the same way as other invoices. However if 
+  the projects's status is not 'Creating Invoice' or later and you include a [WATERMARK] 
+  notation on the Word <a href="../../concepts/template/template.htm">template</a> 
+  for the invoice, the invoice will be produced with a 'Running Invoice' watermark.</font></p>
+<p>&nbsp;</p>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/custom_plug-in.htm">custom 
+    plug-in</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/document.htm">document</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/invoice.htm">invoice</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/project.htm">project</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/task.htm">task</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/template/template.htm">template</a></font></li>
+</ul>
+<p><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">How 
+  To's:</font></span> </p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../task/export_tasks.htm">export 
+    tasks </a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../tutorials/pricing/pricing_tutorial.htm">pricing 
+    tutorial</a></font></li>
+</ul>
+</body>
+</html>

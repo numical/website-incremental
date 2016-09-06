@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Import Tasks from an Estimate</title>
+<link href="../../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Import Tasks from an Estimate</h1>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  project.rw, estimating.rw<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Project Management, Estimating</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">This 
+  extracts data from an <a href="../../concepts/estimate.htm">estimate</a> to 
+  create one or more <a href="../../concepts/task.htm">tasks</a> in the <a href="../../concepts/project.htm">project</a>. 
+  It is one of the ways to add <a href="../../concepts/task.htm">tasks</a> to 
+  a <a href="../../concepts/project.htm">project</a>. The other is to <a href="../../howto/project/add_emergent.htm">add 
+  emergent work</a>. </font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">The 
+  process is conditional on the following:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">the <a href="../../concepts/project.htm">project</a> 
+    status must be either 'Awaiting Work' or 'Work Ongoing';</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">the estimate must not 
+    have been previously imported (i.e. any estimate can be imported only <strong>once</strong>);</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">the estimate must be 
+    <a href="../../concepts/estimate.htm#internal">internal</a> (if the estimate 
+    is<a href="../../concepts/estimate.htm#external">external</a>, Epic requires 
+    an additional custom plug-in - see <a href="#custom">custom imports</a>);</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">the estimate must have 
+    at least one customer task within it (if updating a task, then exactly one 
+    task).</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Tasks can be imported to 
+  create new tasks within the project, or, if there is exactly one customer task 
+  in the estimate, to update a single tasks in the project that has a status of 
+  'With Estimator'. This second option is primarily to allow formal estimating 
+  of emergent work. </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Note that <a href="../../concepts/tariff_item.htm">tariff 
+  items</a> will also be extracted from the estimate.</font></p>
+<ol>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../project/open_project.htm">Open 
+    the parent project's editor</a></font></li>
+  <li><a href="../gui/open_readwrite.htm"><font size="2" face="Arial, Helvetica, sans-serif">Open 
+    the equivalent read-write editor</font></a></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Expand the 'Estimate(s)' 
+    section and click the 'Import Tasks' button. This will only be enabled if 
+    all the above conditions are true:</font> 
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="import_button.png" width="482" height="160" border="1"></font></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">This will start a single-window 
+    <a href="../../concepts/wizard.htm">wizard</a>:</font> 
+    <p><img src="import_wizard.png" width="474" height="485"></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">The options are:</font> 
+    <ul>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">'as new customer 
+        tasks' - as it says</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">'update an existing 
+        'with estimator' task' - disabled if there are no such project tasks - 
+        if you select it you must choose which project task for a displayed list</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">'add tasks fixed 
+        price' - for invoicing purposes, if not selected the tasks are priced 
+        by cost</font></li>
+      <li><font size="2" face="Arial, Helvetica, sans-serif">'include yard tasks 
+        in contract' - whether to create both <a href="../../concepts/task.htm#customer_task">customer 
+        tasks</a> and <a href="../../concepts/task.htm#yard_task">yard tasks</a> within 
+        the project or simply to roll up all yard tasks into their parent customer 
+        task.</font></li>
+    </ul>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Click 'Finish' and the 
+    tasks will be imported. Epic may display a message stating you need to refresh 
+    the projects task list.</font></li>
+</ol>
+<p>&nbsp;</p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="custom"></a><strong>Custom 
+  Import</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Epic's base functionality 
+  can only import <a href="../../concepts/estimate.htm#internal">internal</a> 
+  estimates. If you choose instead to generate estimates in external programs 
+  you will require a specially written task import function in a <a href="../../concepts/custom_plug-in.htm">custom 
+  plug-in</a>. If such a function is available it will be displayed as an additional 
+  button to the right of the standard 'Import Tasks' button.</font></p>
+<p>&nbsp;</p>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/task.htm#customer_task">customer 
+    task</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/custom_plug-in.htm">custom 
+    plug-in</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"> <a href="../../concepts/estimate.htm">estimate</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/estimate.htm#external">external 
+    estimate</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/estimate.htm#internal">internal 
+    estimate </a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/project.htm">project</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/tariff_item.htm">tariff 
+    item</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/task.htm">task</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/task.htm#yard_task">yard 
+    task</a></font></li>
+</ul>
+<p>&nbsp;</p>
+<p><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">How 
+  To's: </font></span></p>
+<ul>
+  <li><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/project/add_emergent.htm">add 
+    emergent work</a></font></span></li>
+  <li><font face="Arial, Helvetica, sans-serif" size="2"><a href="../project/open_project.htm">open 
+    a project's editor</a></font></li>
+  <li><span class="defaultText"><font face="Arial, Helvetica, sans-serif" size="2"><a href="../gui/open_readwrite.htm">open 
+    read-write editor</a></font></span></li>
+</ul>
+</body>
+</html>

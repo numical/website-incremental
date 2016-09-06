@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Planning Tutorial</title>
+<link href="../../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Planning Tutorial - Internal</h1>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  planning.ro,m planning.rw<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Project Management, Planning</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">This 
+  version of the <a href="planning_tutorial.htm">Planning Tutorial</a> discusses 
+  planning using Incremental Epic's in-built planning functionality. <br>
+  There is another version that discusses planning via<a href="planning_msproject.htm"> 
+  integration with Microsoft Project&#8482;</a>.<br>
+  The contents are: </font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#overview">overview</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#prereqs">pre-requisites</a></font></li>
+  <li><a href="#setup"><font size="2" face="Arial, Helvetica, sans-serif">set 
+    up</font></a></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#view">view 
+    the plan</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#print">print 
+    the plan</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#update">update 
+    the plan</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#dependencies">dependencies</a></font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="overview" id="overview"></a><strong>Overview</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Incremental Epic automatically 
+  uses a <a href="../../concepts/project.htm">project's</a> <a href="../../concepts/task.htm">tasks</a> 
+  to create a plan. The plan is available on a seperate 'Plan' tab on the <a href="../../concepts/project.htm">project</a> 
+  <a href="../../concepts/editor.htm">editor</a>: </font></p>
+<p><img src="internal_tab.png" width="747" height="668"></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">The system will automatically 
+  add new and <a href="../../concepts/emergent_work.htm">emergent</a> tasks to 
+  the plan, and update their <a href="../../concepts/task.htm#status">status</a>. 
+  The system will allow you to change the plan dates of started tasks but not 
+  completed or cancelled tasks. </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="prereqs" id="prereqs"></a><strong>Pre-requisites</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">To generate or update a 
+  plan the following must be true:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">you must have the planning 
+    plug-in(s) installed;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">you must have the read-write 
+    planning <a href="../../concepts/activity.htm">activity</a>;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">the planning <a href="../../concepts/preferences.htm">preferences</a> 
+    must be set;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">the <a href="../../concepts/project.htm">project</a> 
+    must have a status of 'Awaiting Work' or later;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">there must be <a href="../../concepts/task.htm">tasks</a> 
+    in the project.</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="setup"></a><strong>Set 
+  Up</strong></font></p>
+<ol>
+  <li><span class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/user/change_preferences.htm">Open 
+    your user preferences</a> and select 'System Settings / Planning' (you must 
+    have the administration activity to do this);</font></span></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Choose 'Planning at customer 
+    task level'. The yard task option may be disabled, dependent on your version 
+    of Epic.</font> 
+    <p><img src="internal_prefs.png" width="766" height="555"></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Note that you could also 
+    set up external planning simultaneouly - but it is not recommended.</font> 
+    <p>&nbsp;</p>
+  </li>
+</ol>
+<p id="overview" name="overview"><font size="2" face="Arial, Helvetica, sans-serif"><a name="view" id="view"></a><strong>View 
+  the Plan</strong></font></p>
+<ol>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/project/open_project.htm">Open 
+    a project</a> at the 'Awaiting Work' stage or later, which has <a href="../../concepts/task.htm">tasks</a> 
+    (either <a href="../../howto/estimating/import_estimate.htm">imported from 
+    an estimate</a> or manually <a href="../../howto/project/add_emergent.htm">added 
+    as emergent work</a>);</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">The 'Plan' tab will be 
+    available and will show all tasks as plan items with a default duration of 
+    two days:</font> 
+    <p><font size="2" face="Arial, Helvetica, sans-serif"><img src="internal_start.PNG" width="749" height="669"></font></p>
+  </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Much like the parent 
+    <a href="../../concepts/project.htm">project's</a> <a href="../../concepts/editor.htm">editor</a>, 
+    the plan has a read-only and read-write mode. Note that this is entirely seperate 
+    to the parent editor's mode.<br>
+    The plan opens read-only. Right-clicking opens a menu that allow you to zoom 
+    in or out, and to choose whether to display the task's duration in elapsed 
+    days.</font></li>
+</ol>
+<p id="overview" name="overview"><font size="2" face="Arial, Helvetica, sans-serif"><a name="print" id="print"></a><strong>Print 
+  the Plan</strong></font></p>
+<ol>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">In either read-only or 
+    read-write mode you can print the plan;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">This done via the two 
+    print icons in the top right. You choose between printing the plan on a single 
+    sheet of A4, or on multiple sheets for better clarity;</font> </li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">In either case clicking 
+    a print icon will open the Print Preview screen which allows further customisation 
+    of the print - page layout, boundaries etc:</font></li>
+</ol>
+<ol>
+  <li><img src="internal_print_preview.png" width="800" height="600"></li>
+</ol>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="update" id="update"></a><strong>Update 
+  the Plan</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Clicking the 'Edit' icon 
+  in the top right (much like <a href="../../howto/gui/open_readwrite.htm">opening 
+  a read-write editor</a>) will switch the pla to read-write mode. This will only 
+  happen if no-one else has already done this. You can switch back to read-write 
+  by clicking the 'Save' icon that replaces the 'Edit' icon. Note that <strong>whilst 
+  the plan is open read-write no-one else can edit tasks</strong> so the plan 
+  should be in read-write mode for a short a time as possible.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">In read-write mode you can 
+  reschedule tasks and change their duration. You can do this by double-clicking 
+  on the task to open a dialog in which you can change the task dates. Or you 
+  can use the<strong> drag'n'drop functionality</strong> of the plan. </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Hovering over any non-complete 
+  task will show you a 'move' icon<img src="move.png" alt="move icon" width="38" height="29" align="absmiddle">. 
+  When this is displayed you can hold down the left mouse button to drag the task 
+  left or right and change its dates. </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">If instead you hover over 
+  the left or right edges of the task you will see a 'resize' icon <img src="resize.png" width="32" height="17">. 
+  Holding down the left mouse button will allow you to drag that edge whilst leaving 
+  the other unmoved - i.e. changing the duration of the task.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><a name="dependencies" id="dependencies"></a><strong>Dependencies</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">You can also add <strong>dependencies</strong> 
+  - task 'B' cannot start until task 'A' is complete. To do this:</font></p>
+<ol>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Click to select task 
+    'A' - its border will become dashed to indicate it has been selected;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">Hold down the SHIFT button 
+    and click task 'B';</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">The dependency will be 
+    set up and indicated via a black filled arrow; task 'B' will move to start 
+    after task 'A';</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">To remove the dependency 
+    repeat exactly the same sequence of actions on the two tasks.</font></li>
+</ol>
+<p><font size="2" face="Arial, Helvetica, sans-serif">A note on dependencies: 
+  dependencies are a way of automatically setting the start date of a task based 
+  on the end date of another task. However as soon as you explicitly set the start 
+  date of a task (using drag'n'drop or the pop-up dialog) then any dependencies 
+  it has are ignored. Ths system assumes that as soon as you have manually set 
+  a date, automatic dates should be ignored.</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

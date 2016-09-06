@@ -1,0 +1,230 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<title>Pricing Tutorial</title>
+<link href="../../incr.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<h1 class="emphasisText">Pricing Tutorial</h1>
+<p class="defaultText"><span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Activity 
+  required :</font></span><font face="Arial, Helvetica, sans-serif" size="2"> 
+  project.mgmt, invoice.rw<br>
+  <span class="navigationText"><font face="Arial, Helvetica, sans-serif" size="2">Plug-in 
+  required :</font></span> Project Management, Invoicing</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">This 
+  tutorial covers:</font></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#labour_costs">labour 
+    costs</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#task_pricing">task 
+    pricing</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="#yard_task_pricing">yard 
+    task pricing</a></font></li>
+</ul>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><strong><a name="labour_costs" id="labour_costs"></a>Labour 
+  Costs</strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Labour 
+  costs are a major component in a contract. To understand the options available 
+  in Epic for pricing tasks you must understand the different means that Epic 
+  provides for monitoring labour costs. </font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">The 
+  simplest choice is between monitoring direct manhours, or monitoring labour 
+  costs. Epic presents four manhour figures for each task; an estimated value 
+  (if any), total ordinary hours, total overtime hours, and the sum of these two 
+  totals. The distinction between 'normal' and overtime hours is made during manhour 
+  entry. Epic can record any number of different labour rates, but for labour 
+  tracking purposes, each is categorised as either a 'normal' or an 'overtime' 
+  rate.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">If instead 
+  you to choose to monitor labour costs, a further choice has to be made. You 
+  can track 'actual' labour costs, as reported by your payroll system, or a 'calculated' 
+  labour cost. Epic is not a payroll system and does not record all information 
+  necessary for payroll*. However it can import data from a payroll system to 
+  present a completely accurate labour cost figure. If such data is not available 
+  Epic can instead calculate a labour cost. To do so it takes the total normal 
+  and overtime hours and multiplies each by a project-specific rate. This rate 
+  is set by the user and can be changed at any time. This allows labour costs 
+  to be tracked against a notional market rate.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">* : 
+  Epic can be used to feed manhour data <em>to</em> a payroll system.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">As a 
+  final utility Epic can present an effective rate for each of these cost options. 
+  This rate is simply the appropriate cost divided by the total hours. Hence the 
+  following labour cost figures is available for each task. Please note that you 
+  are expected to choose which options are most useful yourself rather than try 
+  to use all of them!</font></p>
+<table width="100%" border="1" cellpadding="1" cellspacing="0" bordercolor="#009999">
+  <tr> 
+    <td width="20%"><font size="2" face="Arial, Helvetica, sans-serif">Estimated 
+      manhours</font></td>
+    <td width="70%"><font size="2" face="Arial, Helvetica, sans-serif">estimated 
+      manhours (if any)</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Estimated labour cost</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">estimated labour cost 
+      (if any)</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Estimated rate</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">estimated labour cost 
+      / estimated manhours</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Hours</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">actual manhours (recorded 
+      via <a href="../../howto/manhours/manhour_entry.htm">manhour entry</a> or 
+      imported from payroll system)</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Overtime hours</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">actual overtime manhours 
+      (recorded via <a href="../../howto/manhours/manhour_entry.htm">manhour entry</a> 
+      or imported from payroll system)</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Total hours</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">hours + overtime hours</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Actual labour cost</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">actual total labour 
+      cost (imported from payroll system)</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Actual labour rate</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">actual labour cost 
+      / total hours</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Calculated labour cost</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">(actual manhours x 
+      user defined rate) + (actual overtime hours x user defined overtime rate)</font></td>
+  </tr>
+  <tr> 
+    <td><font size="2" face="Arial, Helvetica, sans-serif">Calculated labour rate</font></td>
+    <td><font size="2" face="Arial, Helvetica, sans-serif">calculated labour cost 
+      / total hours</font></td>
+  </tr>
+</table>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">One 
+  of the most useful features of Epic is the ability to define <a href="../../concepts/alerts/task_alert.htm">task 
+  alerts</a> based on combinations of these figures.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Now 
+  that we understand labour costing we can progress to setting prices on tasks.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><strong><a name="task_pricing"></a>Task 
+  Pricing</strong></font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Task 
+  prices are set via the tasks list on the 'Tasks' tab of the project editor. 
+  Task pricin</font><font size="2" face="Arial, Helvetica, sans-serif">g is available 
+  once a project reaches the 'Work Ongoing' stage. </font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">Only 
+  <a href="../../concepts/task.htm#customer_task">customer tasks</a> have prices. 
+  However, under exceptional circumstances you can decide to set prices at the 
+  yard task level (see <a href="#yard_task_pricing">yard task pricing</a>).</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif">By default 
+  a task's price is not editable until the task is completed or cancelled, though 
+  changing a <a href="../../concepts/preferences.htm">user preference</a> allows 
+  you to edit the price of incomplete tasks ('Your Preferences / Invoice Generation 
+  / allow price to be set before task is completed&quot;).</font></p>
+<p class="defaultText"><span class="defaultText"><font face="Arial, Helvetica, sans-serif"><font size="2"><strong><span style="font-weight: normal;">Task 
+  prices can be one of five values:</span></strong></font></font></span></p>
+<ul>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">fixed to their estimated 
+    value (where there is an estimate value);</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">manual - the price is 
+    entered by the user;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">tariff - they are based 
+    on the tariff costs <strong>only</strong> for that task;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">calculated - Epic calculates 
+    a price based on costs;</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">calculated and adjusted 
+    - the user adds an adjustment to the figure calculated by Epic</font></li>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">The prices of estimated 
+  tasks start out either fixed or calculated (depending on your choice when they 
+  are <a href="../../howto/estimating/import_estimate.htm">imported</a>), whilst 
+  <a href="../../concepts/emergent_work.htm">emergent</a> tasks always start out 
+  as calculated. Once editable, the user can change how a price is set by changing 
+  the values in the 'Price Calc' column of the task list in the project editor:</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif"><img src="set_price_calc.png" width="498" height="248" border="1"></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Choosing 'manual' makes 
+  the 'Price' column editable, otherwise this column cannot be edited.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Choosing 'tariff' means 
+  that the price is based on the total tariff costs for that task and its children 
+  yard tasks. Note if <a href="#yard_task_pricing">yard task pricing</a> is enabled, 
+  the tariff cost counts only the tasks own tariff items.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">The calculated price for 
+  a task </font>= <font size="2" face="Arial, Helvetica, sans-serif">[(labour 
+  cost) x labour markup] + [total purchases x purchase markup] + [total subcontracts 
+  x subcontract markup] + [all tariff items' prices]</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">These 'markup' values are 
+  adjustments applied to each total. These default to values set in <a href="../../concepts/preferences.htm">user 
+  preferences</a> ('Your Preferences / Invoice Generation / Cost Markups for Price&quot;). 
+  However they can be changed for each project by switching to the project editor's 
+  'Project' tab and opening the 'Task Pricing' section. The current values are 
+  displayed under 'Cost Markups for Price', and if you switch to the read-write 
+  Project editor, can be modified. Markups are examples of 'adjustment' fields 
+  with their own particular <a href="../../concepts/adjustment_field.htm">syntax</a>.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">The 'Task Pricing' section 
+  also defines how the labour cost is calculated. By default it uses the actual 
+  labour cost imported from payroll records. However if these are not available, 
+  or you wish to price according to a defined rate, you can tick 'use calculated 
+  labour costs' and then enter the rates at which you wish normal and overtime 
+  hours to be priced. You will have to be in the read-write project editor to 
+  do this.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">Note that markups, labour 
+  rates and how labour cost is calculated can be changed whenever you wish.</font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">The final option for a task 
+  price is to apply an <a href="../../concepts/adjustment_field.htm">adjustment</a> 
+  to the calculated value. The 'Price Calc' column is also an <a href="../../concepts/adjustment_field.htm">adjustment 
+  field </a> so you can clear the 'estimate', 'manual' or 'calculated' text and 
+  add an adjustment that is applied to the calculated price.</font></p>
+<p class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><strong><a name="yard_task_pricing"></a>Yard 
+  Task Pricing</strong></font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">The definition of a <a href="../../concepts/task.htm#yard_task">yard 
+  task</a> is one that the customer does not see. Hence all yard task costs and 
+  prices are rolled up to their parent <a href="../../concepts/task.htm#yard_task">customer 
+  task</a>. However you can set Epic to allow yard task prices via <a href="../../concepts/preferences.htm">user 
+  preferences </a>('Your Preferences / Invoice Generation / allow projects to 
+  include prices at yard task level&quot;). This is not recommended as it can 
+  lead to confusion on overall costs. However this can be down where you wish 
+  to include line item detail in <a href="../../concepts/invoice.htm">invoices</a> 
+  generated by Epic. </font></p>
+<p><font size="2" face="Arial, Helvetica, sans-serif">If you do choose to set 
+  yard prices explicitly, note that the price of the parent customer task <em>includes</em> 
+  the yard tasks prices. When you <a href="../../howto/invoice/invoice_generation.htm">generate 
+  the invoice</a> you are then offered the option 'show customer task prices exclusive 
+  of yard task prices'.</font></p>
+<p>&nbsp;</p>
+<p class="defaultText"><span class="navigationText"><font size="2" face="Arial, Helvetica, sans-serif">See 
+  also:</font></span> </p>
+<ul>
+  <li class="defaultText"><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/adjustment_field.htm">adjustment 
+    field</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/emergent_work.htm">emergent 
+    work </a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/task/export_tasks.htm">exporting 
+    a project's tasks</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/estimating/import_estimate.htm">import 
+    tasks from an estimate</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/invoice.htm">invoice</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/invoice/invoice_generation.htm">invoice 
+    generation</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../howto/manhours/manhour_entry.htm">manhour 
+    entry</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/preferences.htm">preferences</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/tariff_item.htm">tariff 
+    items</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/task.htm">tasks</a></font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif"><a href="../../concepts/alerts/task_alert.htm">task 
+    alerts</a></font></li>
+</ul>
+<p class="defaultText">&nbsp;</p>
+<p class="defaultText">&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
